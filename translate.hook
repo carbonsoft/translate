@@ -1,0 +1,10 @@
+#!/bin/bash
+
+. /devel/bin/common.hook
+echo "Изменился $PROG"
+
+DSTLIB=/usr/lib/$PYTHON_VER/site-packages/$PROG
+echo "Копирую в $DSTLIB"
+mkdir -p $ro_image/$DSTLIB
+
+rsync $RSYNC_OPTS $APP/src/$PROG/* $ro_image/$DSTLIB
