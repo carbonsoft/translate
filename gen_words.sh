@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eu
 # echo "$0 $@ [$$] START" >&2
 . /app/base/usr/bin/activate
 echo Info: генерируем .po файлы для перевода
