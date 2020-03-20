@@ -1,5 +1,6 @@
 #!/usr/bin/python2.6
 # -*- coding: utf-8 -*-
+import filecmp
 import logging
 import os
 import shutil
@@ -17,6 +18,7 @@ DAEMONS_TR_PATH = CUR_DIR + '/daemons.po'
 BASE_DJANGO_PATH = CUR_DIR + '/django-appadmin/base/'
 BILLING_DJANGO_PATH = CUR_DIR + '/djsite/sites/'
 DAEMONS_PATH = CUR_DIR + '/daemons/'
+DB_PATH = CUR_DIR + '/carbon_db/data_system.sql'
 DJANGO_TR_FILE_PATH = 'locale/en/LC_MESSAGES/django.po'
 
 
@@ -85,6 +87,17 @@ def get_daemons_words():
     shutil.copy(DAEMONS_PATH + 'translate.po', DAEMONS_TR_PATH)
 
 
+def get_carbondb_data():
+    logger.info(u'Проверяем появилось ли чтото новое в БД')
+    if not filecmp.cmp(CUR_DIR + '/data_system.sql', DB_PATH, shallow=False):
+        logger.info(u'Изменилась база данных: необходимо обоновить перевод')
+        run_bash_command('diff -e  {0}/data_system.sql {0}/carbon_db/data_system.sql '
+                         '> {0}/data_system.sql.diff.$$'.format(CUR_DIR))
+        shutil.copy(CUR_DIR + '/carbon_db/data_system.sql', CUR_DIR + '/data_system.sql')
+    else:
+        logger.info(u'База не поменялась')
+
+
 def compile_translate():
     res = run_bash_command(CUR_DIR + '/compile_words.sh')
     if res[0]:
@@ -111,6 +124,7 @@ def _init():
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/daemons.git', 'daemons')
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/django-appadmin.git', 'django-appadmin')
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/djsite.git', 'djsite')
+    clone_or_pull('gitlab@git.carbonsoft.ru:crb5/carbon_db.git', 'carbon_db')
 
 
 if __name__ == '__main__':
@@ -123,6 +137,7 @@ if __name__ == '__main__':
         get_django_billing_words()
         get_django_appadmin_words()
         get_daemons_words()
+        get_carbondb_data()
     elif args.cmd == 'put':
         compile_translate()
     elif args.cmd == 'init':
