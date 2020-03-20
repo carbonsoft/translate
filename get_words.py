@@ -14,9 +14,9 @@ CUR_DIR = os.path.dirname(os.path.abspath(__file__))
 BILLING_TR_PATH = CUR_DIR + '/admin_billing.po'
 BASE_TR_PATH = CUR_DIR + '/base.po'
 DAEMONS_TR_PATH = CUR_DIR + '/daemons.po'
-BASE_DJANGO_PATH = '/app/base/usr/local/www/base/'
-BILLING_DJANGO_PATH = '/app/asr_billing/usr/local/www/sites/'
-DAEMONS_PATH = '/app/asr_billing/usr/lib/python2.7/site-packages/daemons/'
+BASE_DJANGO_PATH = CUR_DIR + '/django-appadmin/base/'
+BILLING_DJANGO_PATH = CUR_DIR + '/djsite/sites/'
+DAEMONS_PATH = CUR_DIR + '/daemons/'
 DJANGO_TR_FILE_PATH = 'locale/en/LC_MESSAGES/django.po'
 
 
@@ -90,14 +90,37 @@ def compile_translate():
     logger.info(res)
 
 
+def clone_or_pull(repo_url, dir_name):
+    cmd_clone = 'cd {0}; git clone {1}'.format(CUR_DIR, repo_url)
+    cmd_pull = 'cd {0}/{1}; git reset --hard; git checkout kag; git pull'.format(CUR_DIR, dir_name)
+    if not os.path.exists('{0}/{1}'.format(CUR_DIR, dir_name)):
+        res = run_bash_command(cmd_clone)
+        logger.info(res)
+        if res[0]:
+            raise Exception(u'Ошибка клонирования ' + repo_url)
+    res = run_bash_command(cmd_pull)
+    logger.info(res)
+    if res[0]:
+        raise Exception(u'Ошибка обновления ' + repo_url)
+
+
+def _init():
+    clone_or_pull('gitlab@git.carbonsoft.ru:crb5/daemons.git', 'daemons')
+    clone_or_pull('gitlab@git.carbonsoft.ru:crb5/django-appadmin.git', 'django-appadmin')
+    clone_or_pull('gitlab@git.carbonsoft.ru:crb5/djsite.git', 'djsite')
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Утилита получает файлы фраз для перевода посредством Django')
     parser.add_argument('--cmd', dest='cmd', default='get',
                         help='Получить файлы для перевода или скомпилировать текущие get/put')
     args = parser.parse_args()
     if args.cmd == 'get':
+        _init()
         get_django_billing_words()
         get_django_appadmin_words()
         get_daemons_words()
     elif args.cmd == 'put':
         compile_translate()
+    elif args.cmd == 'init':
+        _init()
