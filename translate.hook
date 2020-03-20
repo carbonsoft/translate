@@ -14,12 +14,14 @@ BASE_DJANGO_PATH='/usr/local/www/base/'
 BILLING_DJANGO_PATH='/usr/local/www/sites/'
 DAEMONS_PATH='/usr/lib/python2.7/site-packages/daemons/'
 LOCALE_PATH='locale/en/LC_MESSAGES/'
-
-mkdir -p $ro_image/$DAEMONS_PATH$LOCALE_PATH
-rsync $RSYNC_OPTS $APP/src/$PROG/daemons.* $ro_image/$DAEMONS_PATH$LOCALE_PATH
-mkdir -p $ro_image/$BILLING_DJANGO_PATH$LOCALE_PATH
-rsync $RSYNC_OPTS $APP/src/$PROG/admin_billing.mo $ro_image/$BILLING_DJANGO_PATH$LOCALE_PATH/django.mo
-rsync $RSYNC_OPTS $APP/src/$PROG/admin_billing.po $ro_image/$BILLING_DJANGO_PATH$LOCALE_PATH/django.po
-mkdir -p $ro_image/$BASE_DJANGO_PATH$LOCALE_PATH
-rsync $RSYNC_OPTS $APP/src/$PROG/base.mo $ro_image/$BASE_DJANGO_PATH$LOCALE_PATH/django.mo
-rsync $RSYNC_OPTS $APP/src/$PROG/base.po $ro_image/$BASE_DJANGO_PATH$LOCALE_PATH/django.po
+if [ $APP = 'asr_billing' ]; then
+    mkdir -p $ro_image/$DAEMONS_PATH$LOCALE_PATH
+    rsync $RSYNC_OPTS $APP/src/$PROG/daemons.* $ro_image/$DAEMONS_PATH$LOCALE_PATH
+    mkdir -p $ro_image/$BILLING_DJANGO_PATH$LOCALE_PATH
+    rsync $RSYNC_OPTS $APP/src/$PROG/admin_billing.mo $ro_image/$BILLING_DJANGO_PATH$LOCALE_PATH/django.mo
+    rsync $RSYNC_OPTS $APP/src/$PROG/admin_billing.po $ro_image/$BILLING_DJANGO_PATH$LOCALE_PATH/django.po
+else
+    mkdir -p $ro_image/$BASE_DJANGO_PATH$LOCALE_PATH
+    rsync $RSYNC_OPTS $APP/src/$PROG/base.mo $ro_image/$BASE_DJANGO_PATH$LOCALE_PATH/django.mo
+    rsync $RSYNC_OPTS $APP/src/$PROG/base.po $ro_image/$BASE_DJANGO_PATH$LOCALE_PATH/django.po
+fi
