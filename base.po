@@ -1,0 +1,431 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-20 13:51+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+
+msgid "Не указано"
+msgstr "No password specified"
+
+msgid "Администратор"
+msgstr "Administrator"
+
+msgid "Менеджер"
+msgstr "Manager"
+
+msgid "Директор"
+msgstr "Director"
+
+msgid "Бухгалтер"
+msgstr "Accountant"
+
+msgid "ФСБ"
+msgstr "FSB"
+
+msgid "Ваш старый пароль"
+msgstr "Your old password"
+
+msgid "Ваш новый пароль"
+msgstr "Your new password"
+
+msgid "Новый пароль"
+msgstr "New password"
+
+msgid "Группы"
+msgstr "Groups"
+
+msgid "Логин"
+msgstr "Login"
+
+msgid "Пароль"
+msgstr "Password"
+
+msgid "Логин может содержать только цифры и латинские буквы."
+msgstr "Login can contain only digits and Latin letters."
+
+msgid "Интерфейс"
+msgstr "Interface"
+
+msgid "Email для оповещений"
+msgstr "Email for alerts"
+
+msgid "Номер для смс оповещений"
+msgstr "Phone number for SMS alerts"
+
+msgid "Рассылка HelpDesk"
+msgstr "Newsletter HelpDesk"
+
+msgid "Необходимо указать интерфейс пользователя"
+msgstr "Creating a user"
+
+msgid "Имя"
+msgstr "Name"
+
+msgid "Имя группы может содержать только цифры и латинские буквы."
+msgstr "Group name can contain only digits and Latin letters"
+
+msgid "* Регистрационный ключ"
+msgstr "* Registration key"
+
+msgid "* Название организации"
+msgstr "* Organization name"
+
+msgid "* Номер телефона Администратора для alarm SMS-оповещений"
+msgstr "* Phone number of the Administrator for alarm SMS-notification"
+
+msgid "Я хочу сделать продукт лучше (отправка отчетов об ошибках)"
+msgstr "I want to make the product better (sending error reports)"
+
+msgid "Уникальный идентификатор константы (используется для обращения к константе из хранимых процедур)"
+msgstr "Unique identifier of constants (used to refer to constant from stored procedures)"
+
+msgid "Значение константы"
+msgstr "Constant value"
+
+msgid "Описание константы"
+msgstr "Constant description"
+
+msgid "Управление администраторами"
+msgstr "Administrator management"
+
+msgid "Настройка сервера"
+msgstr "Server settings"
+
+msgid "Фильтр трафика Роскомнадзора"
+msgstr "Traffic filter of Roskomnadzor"
+
+msgid "Carbon OSS Billing 5"
+msgstr "Carbon OSS Billing 5"
+
+msgid "Детальная статистика Netflow"
+msgstr "System of statistics collection"
+
+msgid "Ошибка активации. Пожалуйста, попробуйте позже.\\nОткрыть лог?"
+msgstr ""
+
+msgid "Активация прошла успешно"
+msgstr "Activated"
+
+msgid "Управление пользователями"
+msgstr "Users management"
+
+msgid "Лог последнего обновления"
+msgstr "Log of last update"
+
+msgid "Обновить активацию"
+msgstr "Update"
+
+msgid "Сменить пароль"
+msgstr "Change password"
+
+msgid "Выйти"
+msgstr "Log out"
+
+msgid "Выключить сервер"
+msgstr "Turn off"
+
+msgid "Идёт обработка, пожалуйста, подождите..."
+msgstr ""
+
+msgid "Смена пароля"
+msgstr "Change password"
+
+msgid "Ошибка"
+msgstr "Error"
+
+msgid "Готово"
+msgstr "Done"
+
+msgid "Внимание"
+msgstr "Attention"
+
+msgid "Изменяя пароль главного администратора - вы меняете пароль для входа по ssh!"
+msgstr "Changing the password of the administrator - you change your password to login via ssh!"
+
+msgid "Сохранить"
+msgstr "Save"
+
+msgid "Изменить пароль"
+msgstr "Change password"
+
+msgid "Отмена"
+msgstr "Cancel"
+
+msgid "Не зарегистрирован"
+msgstr "Not registered"
+
+msgid "Продукт"
+msgstr "Product"
+
+msgid "Регистрационный номер"
+msgstr "Registration number"
+
+msgid "Статус"
+msgstr "Status"
+
+msgid "Регистрация"
+msgstr "Registration"
+
+msgid "Версия"
+msgstr "Version"
+
+msgid "Обновлено"
+msgstr "Updated"
+
+msgid "Сохранить и применить"
+msgstr "Save and apply"
+
+msgid "Назад"
+msgstr "Back"
+
+msgid "Тип интерфейса"
+msgstr "Type of interface"
+
+msgid "Сетевая карта"
+msgstr "Network card"
+
+msgid "Тег"
+msgstr "Tag"
+
+msgid "Перезагрузка сети"
+msgstr "Network restart"
+
+msgid "ОК"
+msgstr "OK"
+
+msgid "Добавление интерфейса"
+msgstr "Adding interface"
+
+msgid "Добавить интерфейс"
+msgstr "Add interface"
+
+msgid "Вы точно хотите удалить интерфейс?"
+msgstr "Are you sure you want to delete the interface"
+
+msgid "Удалить"
+msgstr "Delete"
+
+msgid "Применить"
+msgstr "Apply"
+
+msgid ""
+"\n"
+"                    <p style='color: #aa3333;'>Настройка сети через Web находится в экспериментальном режиме.</p>\n"
+"                    <p style='color: #aa3333;'>Рекомендуется использовать консольное меню, вызвать которое можно подключившись по ssh и выполнив команду menu.</p>\n"
+"                    <p style='color: #aa3333;'>* В текущей версии после настройки сети необходимо перезагрузить сервер.</p>\n"
+"                "
+msgstr ""
+"\n"
+"                    <p style='color: #aa3333;'>Network configuration via Web is in test mode.</p>\n"
+"                    <p style='color: #aa3333;'>It is recommended to use console menu, cause that can be connected via ssh and execute the menu command.</p>\n"
+"                    <p style='color: #aa3333;'>* In current version after network configuration is done, you must restart the server.</p>\n"
+"                "
+
+msgid "Добавить"
+msgstr "Add"
+
+msgid "Применение изменений, пожалуйста, подождите..."
+msgstr ""
+
+msgid "При создании нового ключа сервера все предыдущие сертификаты станут недействительными и будут удалены! Вы хотите продолжить?"
+msgstr "When creating a new server key all previous certificates will be invalid and will be removed! Do you want to continue?"
+
+msgid "Произошла ошибка"
+msgstr "Error has occurred"
+
+msgid "Пожалуйста, чтобы поддержать продукт, опишите, какие действия вызвали её и отправьте сообщение разработчикам"
+msgstr "Please, to support the product, describe what actions caused it and send a message to developers"
+
+msgid "Показать/скрыть отладочную информацию"
+msgstr "Show/hide debug info"
+
+msgid ""
+"Фатальная ошибка!\n"
+"По адресу %(build_absolute_uri)s сгенерирован Exception.\n"
+"Сервер не смог самостоятельно разрешить проблему."
+msgstr ""
+"Fatal error!\n"
+"By the address %(build_absolute_uri)s generated Exception.\n"
+"Billing could not solve the problem."
+
+msgid "Отправить разработчикам"
+msgstr "Send to developers"
+
+msgid "Вы уверены что хотите обновить сервер?"
+msgstr "Are you sure you want to update server?"
+
+msgid "Зарегистрироваться"
+msgstr "Sign up"
+
+msgid "Продолжить работу"
+msgstr "Continue to work"
+
+msgid "Купить"
+msgstr "Buy"
+
+msgid "Произошла непредвиденная ошибка. Пожалуйста, обратитесь в техническую поддержку"
+msgstr "Unexpected error occurred. Please, contact technical support"
+
+msgid "Превышено время ожидания регистрации/активации. Пожалуйста, обратитесь в техническую поддержку"
+msgstr "Registration/activation waiting time is exceeded. Please, contact technical support"
+
+msgid "Необходима перезагрузка сервера"
+msgstr "Reset of server is necessary"
+
+msgid "Выполняется перезагрузка приложения"
+msgstr "Rebooting application"
+
+msgid "Обновите страницу через несколько секунд"
+msgstr "Refresh the page in a few seconds"
+
+msgid "Доступна новая версия"
+msgstr "New version is available"
+
+msgid "Обновить"
+msgstr "Update"
+
+msgid "Запущено обновление"
+msgstr "Log of last update"
+
+msgid "Посмотреть"
+msgstr ""
+
+msgid "Создание группы"
+msgstr "Creating a group"
+
+msgid "Сохранено"
+msgstr "Saved"
+
+msgid "Группа удалена"
+msgstr "Group has been deleted"
+
+msgid "Создать группу"
+msgstr "Create a group"
+
+msgid "Операции"
+msgstr "Operations"
+
+msgid "Удалить группу"
+msgstr "Delete group"
+
+msgid "Вы уверены?"
+msgstr "Are you sure?"
+
+msgid "Список баз в safemode(не поврежденных)"
+msgstr ""
+
+msgid "Восстановить"
+msgstr "Update"
+
+msgid "Список поврежденных баз"
+msgstr "List of users"
+
+msgid "Список резервных копий"
+msgstr "List of users"
+
+msgid "Смена групп для"
+msgstr "Change groups for"
+
+msgid "Изменение пользователя"
+msgstr "Changing user"
+
+msgid "Создание пользователя"
+msgstr "Creating a user"
+
+msgid "Пользователь удалён"
+msgstr "User deleted"
+
+msgid "Список пользователей"
+msgstr "List of users"
+
+msgid "Создать пользователя"
+msgstr "Create a user"
+
+msgid "Изменение групп"
+msgstr "Changing groups"
+
+msgid "Сменить группы"
+msgstr "Replace groups"
+
+msgid "Не задан пароль"
+msgstr "No password specified"
+
+msgid "Редактировать"
+msgstr "Edit"
+
+msgid "Удалить пользователя"
+msgstr "Delete user"
+
+msgid "До окончания пробного периода осталось {0} из {1} дней"
+msgstr "Before the end of the trial period left {0} of {1} days"
+
+msgid "Текущая стадия внедрения: {0}"
+msgstr "Current stage of implementation: {0}"
+
+msgid "осталось {0} дней"
+msgstr "{0} days left"
+
+msgid "Зарегистрирован"
+msgstr "Registered"
+
+msgid "Активирован"
+msgstr "Activated"
+
+msgid "Не активирован"
+msgstr "Not activated"
+
+msgid "Спасибо, что используете продукты компании Carbon Soft! Ваш регистрационный номер {0} для продукта {1}, зарегистрируйтесь пожалуйста на сайте для активации демо периода и получения тех. поддержки."
+msgstr "Thank you for using the company's products Carbon Soft! Your registration number {0} for product {1}, please register on the site for activation of demo period, and receiving technical support."
+
+msgid "Внимание! В системе остановлен crond, это может привести к выходу системы из строя!"
+msgstr "Attention! The system is stopped crond, it can cause the system to fail!"
+
+msgid "Ошибка при формировании диагностики. Попробуйте позже."
+msgstr ""
+
+msgid "Сертификат сгенерирован"
+msgstr "Certificate generated"
+
+msgid "Логин или пароль содержат запрещенные символы"
+msgstr "Login or password contains illegal characters"
+
+msgid "Серверный ключ создан"
+msgstr "Server key is created"
+
+msgid "Это меню нельзя редактировать! Для редактирования используйте команду menu в консоли"
+msgstr ""
+
+msgid "Ошибка сохранения"
+msgstr "Error saving"
+
+msgid "ЛОГИН"
+msgstr "LOGIN"
+
+msgid "Удалён"
+msgstr "Deleted"
+
+msgid "Создать"
+msgstr "Create"
+
+msgid "Создать ключ сервера"
+msgstr "Create server key"
+
+msgid "Администратор {0} изменил: "
+msgstr "Administrator"
+
+msgid "Администратор {0} добавил: "
+msgstr "Administrator"
+
+msgid "Только root может менять себе пароль!"
+msgstr "Only root can change his password!"
+
+msgid "Сетевые интерфейсы"
+msgstr "Network interfaces"
