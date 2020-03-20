@@ -87,6 +87,9 @@ def get_daemons_words():
 
 def compile_translate():
     res = run_bash_command(CUR_DIR + '/compile_words.sh')
+    if res[0]:
+        logger.info(res)
+        raise Exception(u'Не удалось скомпилировать перевод')
     logger.info(res)
 
 
