@@ -92,7 +92,7 @@ def compile_translate():
 
 def clone_or_pull(repo_url, dir_name):
     cmd_clone = 'cd {0}; git clone {1}'.format(CUR_DIR, repo_url)
-    cmd_pull = 'cd {0}/{1}; git reset --hard; git checkout kag; git pull'.format(CUR_DIR, dir_name)
+    cmd_pull = 'cd {0}/{1}; git reset --hard; git checkout integra; git pull'.format(CUR_DIR, dir_name)
     if not os.path.exists('{0}/{1}'.format(CUR_DIR, dir_name)):
         res = run_bash_command(cmd_clone)
         logger.info(res)
