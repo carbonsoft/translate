@@ -92,7 +92,7 @@ def get_carbondb_data():
     if not filecmp.cmp(CUR_DIR + '/data_system.sql', DB_PATH, shallow=False):
         logger.info(u'Изменилась база данных: необходимо обоновить перевод')
         run_bash_command('diff -e  {0}/data_system.sql {0}/carbon_db/data_system.sql '
-                         '> {0}/data_system.sql.diff.$$'.format(CUR_DIR))
+                         '> {0}/data_system.sql.diff.$$; ls {0}/data_system.sql.diff.$$'.format(CUR_DIR))
         shutil.copy(CUR_DIR + '/carbon_db/data_system.sql', CUR_DIR + '/data_system.sql')
     else:
         logger.info(u'База не поменялась')
