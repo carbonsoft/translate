@@ -2,9 +2,9 @@
 # set -eu
 # echo "$0 $@ [$$] START" >&2
 . /app/base/usr/bin/activate
-#echo Info: генерируем .po файлы для перевода
-#echo Usage:  django_project_dir
-#echo Example:  /app/asr_billing/usr/local/www/sites
+# echo Info: генерируем .po файлы для перевода
+# echo Usage:  django_project_dir
+# echo Example:  /app/asr_billing/usr/local/www/sites
 BASE_DIR=/app/base/usr/local/www/base/
 LOCALE_DIR=locale/en/LC_MESSAGES/
 rm $BASE_DIR$LOCALE_DIR/*
