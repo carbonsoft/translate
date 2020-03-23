@@ -106,7 +106,7 @@ msgid "Обслуживается оператором связи"
 msgstr "Served by operator"
 
 msgid "Пени (% в день)"
-msgstr "Fines (% in day)"
+msgstr "Fines (% per day)"
 
 msgid "Оповещать по Email о нарушениях прав доступа"
 msgstr "Notify by Email about access violation"
