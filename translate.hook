@@ -14,7 +14,8 @@ BASE_DJANGO_PATH='/usr/local/www/base/'
 BILLING_DJANGO_PATH='/usr/local/www/sites/'
 DAEMONS_PATH='/usr/lib/python2.7/site-packages/daemons/'
 LOCALE_PATH='locale/en/LC_MESSAGES/'
-if [ $APP = 'asr_billing' ]; then
+APP=${APP%/*}
+if [ "${APP##*/}" = 'asr_billing' ]; then
     mkdir -p $ro_image/$DAEMONS_PATH$LOCALE_PATH
     rsync $RSYNC_OPTS $APP/src/$PROG/daemons.* $ro_image/$DAEMONS_PATH$LOCALE_PATH
     mkdir -p $ro_image/$BILLING_DJANGO_PATH$LOCALE_PATH
