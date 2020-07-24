@@ -5673,8 +5673,8 @@ msgstr "Sum: {0}"
 msgid " Стоимость услуги: {0:.2f} {1}"
 msgstr " Cost of services: {0:.2f} {1}"
 
-msgid "{0}: {1} ({2:.2f} {3} {4})"
-msgstr "{0}: {1} ({2:.2f} {3} {4})"
+msgid "{name}:{type} ({summ:.2f} {currency} {msg}"
+msgstr "{name}:{type} ({summ:.2f} {currency} {msg}"
 
 msgid "Нельзя удалять системные услуги"
 msgstr "You can't remove system services"
