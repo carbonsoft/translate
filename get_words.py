@@ -106,6 +106,11 @@ def compile_translate():
     logger.info(res)
 
 
+def copy_no_overwrite(src_path, dst_path):
+    if os.path.exists(src_path) and not os.path.exists(dst_path):
+        shutil.copy(src_path, dst_path)
+
+
 def clone_or_pull(repo_url, dir_name):
     cmd_clone = 'cd {0}; git clone {1}'.format(CUR_DIR, repo_url)
     cmd_pull = 'cd {0}/{1}; git reset --hard; git checkout integra; git pull'.format(CUR_DIR, dir_name)
@@ -125,6 +130,10 @@ def _init():
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/django-appadmin.git', 'django-appadmin')
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/djsite.git', 'djsite')
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/carbon_db.git', 'carbon_db')
+    copy_no_overwrite(DAEMONS_TR_PATH, os.path.join(DAEMONS_PATH, 'translate.po'))
+    copy_no_overwrite(BASE_TR_PATH, os.path.join(BASE_DJANGO_PATH, DJANGO_TR_FILE_PATH))
+    copy_no_overwrite(BILLING_TR_PATH, os.path.join(BILLING_DJANGO_PATH, DJANGO_TR_FILE_PATH))
+    copy_no_overwrite(os.path.join(CUR_DIR, 'data_system.sql'), DB_PATH)
 
 
 if __name__ == '__main__':
