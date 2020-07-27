@@ -133,7 +133,6 @@ def _init():
     shutil.copy(DAEMONS_TR_PATH, os.path.join(DAEMONS_PATH, 'translate.po'))
     shutil.copy(BASE_TR_PATH, os.path.join(BASE_DJANGO_PATH, DJANGO_TR_FILE_PATH))
     shutil.copy(BILLING_TR_PATH, os.path.join(BILLING_DJANGO_PATH, DJANGO_TR_FILE_PATH))
-    shutil.copy(os.path.join(CUR_DIR, 'data_system.sql'), DB_PATH)
 
 
 if __name__ == '__main__':
