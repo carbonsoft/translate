@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-28 00:53+0500\n"
+"POT-Creation-Date: 2020-07-28 02:34+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2389,6 +2389,9 @@ msgstr "--Quantity of hours to reset the statistics"
 msgid "Правило срабатывает только если положительный баланс"
 msgstr "The rule is triggered only if a positive balance"
 
+msgid "Скачано+Отправлено, более чем, МБ"
+msgstr "Sent+Downloaded more than, MB"
+
 msgid "Блокирующее правило"
 msgstr "Blocking rule"
 
@@ -3035,9 +3038,6 @@ msgstr "Downloaded all less than, MB"
 
 msgid "Отправлено всего менее чем, МБ"
 msgstr "Sent all less than, MB"
-
-msgid "Скачано+Отправлено, более чем, МБ"
-msgstr "Sent+Downloaded more than, MB"
 
 msgid "Скачано+Отправлено всего менее чем, МБ"
 msgstr "Sent+Downloaded all less than, MB"
@@ -7094,7 +7094,7 @@ msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1
 msgid "<a href=\"/static/admin/1c/carbonsoft1c82.epf\" download>Обработка для 1С 8.2 Бухгалтерия ред. 2.0</a>"
 msgstr "<a href=\"/static/admin/1c/carbonsoft1c82.epf\" download>Processing for 1C 8.2 Accounting ed. 2.0</a>"
 
-msgid "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Обработка для 1С 8.3.5 and lower, Бухгалтерия ред. 3.0</a>"
+msgid "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Обработка для 1С 8.3.5 и ниже, Бухгалтерия ред. 3.0"
 msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Processing for 1С 8.3.5 and lower, Accounting ed. 3.0</a>"
 
 msgid "<a href=\"/static/admin/1c/carbonsoft1c83_6_3.epf\" download>Обработка для 1С 8.3.6, Бухгалтерия ред. 3.0</a>"
