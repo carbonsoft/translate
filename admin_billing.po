@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-20 13:51+0500\n"
+"POT-Creation-Date: 2020-07-28 00:53+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1142,9 +1142,11 @@ msgstr "Country"
 msgid "Город"
 msgstr "City"
 
-#, fuzzy
+msgid "Населенный пункт"
+msgstr "Settlement"
+
 msgid "Регион"
-msgstr "Login"
+msgstr "State"
 
 msgid "Улица"
 msgstr "Street"
@@ -1194,33 +1196,29 @@ msgstr "ID of home"
 msgid "Дата синхронизации"
 msgstr "Synchronization server"
 
-#, fuzzy
 msgid "Тип адреса"
-msgstr "Type of request"
+msgstr "Type of address"
 
-#, fuzzy
 msgid "Полный адрес одной строкой"
-msgstr "Forwarded by service"
+msgstr "Full address in one line"
 
-#, fuzzy
 msgid "Тип региона"
-msgstr "Type of template"
+msgstr "Type of state"
 
-#, fuzzy
 msgid "Тип района"
-msgstr "Type of template"
+msgstr "Type of area"
 
-#, fuzzy
 msgid "Тип города"
-msgstr "Type of request"
+msgstr "Type of city"
 
-#, fuzzy
+msgid "Тип населенного пункта"
+msgstr "Type of settlement"
+
 msgid "Тип улицы"
-msgstr "Service's type"
+msgstr "Type of street"
 
-#, fuzzy
 msgid "Тип дома"
-msgstr "ID of home"
+msgstr "Type of house"
 
 #, fuzzy
 msgid "Тип корпуса"
@@ -1290,6 +1288,15 @@ msgstr "Done"
 
 msgid "Тип задачи"
 msgstr "Type of task"
+
+msgid "Какую услугу меняем"
+msgstr "Service to change"
+
+msgid "На какую услугу меняем"
+msgstr "Switch to service"
+
+msgid "Новая стоимость"
+msgstr "New cost"
 
 msgid "Задача выполняется"
 msgstr "Task is performed"
@@ -1388,6 +1395,9 @@ msgstr "Dynamic IP"
 
 msgid "Динамический NAT"
 msgstr "Dynamic NAT"
+
+msgid "Не отправлять framed-ip-address"
+msgstr "Don't send framed-ip-address"
 
 msgid "Проверять login"
 msgstr "Check login"
@@ -1662,6 +1672,9 @@ msgstr "Disable upon reaching the spent minutes"
 #, fuzzy
 msgid "Сохранять IP только после авторизации"
 msgstr "Write off, only if there was a traffic"
+
+msgid "Токен авторизации"
+msgstr "Authorization token"
 
 msgid "Статус баланса"
 msgstr "Balance status"
@@ -2751,9 +2764,14 @@ msgstr "Generated password"
 msgid "Дата выдачи токена восстановления пароля"
 msgstr "Date of beginning of service"
 
-#, fuzzy
 msgid "Внешний ИД"
-msgstr "External traffic"
+msgstr "External ID"
+
+msgid "Учетная запись не будет выводиться в блоке Информация в карточке абонента"
+msgstr "The account will not be displayed in the Information block in the subscriber card"
+
+msgid "Не отображать в карточке абонента"
+msgstr "Do not display in the subscriber card"
 
 msgid "1-нужно добавить -1-нужно удалить 0-не нужно ничего делать"
 msgstr "1-need to add -1-need to delete 0-do nothing"
@@ -3018,9 +3036,11 @@ msgstr "Downloaded all less than, MB"
 msgid "Отправлено всего менее чем, МБ"
 msgstr "Sent all less than, MB"
 
-#, fuzzy
+msgid "Скачано+Отправлено, более чем, МБ"
+msgstr "Sent+Downloaded more than, MB"
+
 msgid "Скачано+Отправлено всего менее чем, МБ"
-msgstr "Sent all less than, MB"
+msgstr "Sent+Downloaded all less than, MB"
 
 msgid "Точность округления трафика"
 msgstr "Precision traffic rounding"
@@ -3224,6 +3244,24 @@ msgstr "Service type"
 msgid "Цена за единицу"
 msgstr "Price for day"
 
+msgid "Принято звонков более чем, шагов:"
+msgstr "Calls received more than, steps"
+
+msgid "Но менее чем, шагов:"
+msgstr "But less than, steps"
+
+msgid "Сделано звонков более чем, шагов:"
+msgstr "Calls made more than, steps"
+
+msgid "Сделано менее чем, шагов:"
+msgstr "Made less than, steps"
+
+msgid "Тарифицировать начиная с 1 секунды"
+msgstr "Charge starting from 1 second"
+
+msgid "Учитывать звонки только с NAS указанной группы"
+msgstr "Count calls only from NAS-server of specified group"
+
 msgid "Списывать, только если лимит не превышен"
 msgstr "Write off only if the limit is not exceeded"
 
@@ -3386,6 +3424,9 @@ msgstr "Enable production mode to count the calls (in this mode, you must config
 
 msgid "Через АТС проходят транзитные звонки"
 msgstr "Through telephone exchange transit calls pass"
+
+msgid "Авторизация через RADIUS по"
+msgstr "Authorization through RADIUS via"
 
 msgid "Целочисленное значение"
 msgstr "Integer"
@@ -4470,6 +4511,9 @@ msgstr "Reference"
 msgid "Типы сенсоров"
 msgstr "Types of requests"
 
+msgid "Группы услуг VOIP"
+msgstr "Group of VOIP services"
+
 msgid "(Значения по умолчанию)"
 msgstr "(Default value)"
 
@@ -4941,18 +4985,6 @@ msgstr "The model isn't specified!"
 msgid "Баланс"
 msgstr "Balance"
 
-msgid "Галочка"
-msgstr "Check mark"
-
-msgid "Список"
-msgstr "List"
-
-msgid "Модель"
-msgstr "Model"
-
-msgid "Время"
-msgstr "Time"
-
 #, fuzzy
 msgid "Найдены дубликаты:"
 msgstr "Identifier"
@@ -4993,6 +5025,9 @@ msgstr "Can't create subscriber in recycle bin"
 msgid "Объединение адресов"
 msgstr "Dynamic IP addresses"
 
+msgid "С какой даты"
+msgstr "From date"
+
 msgid "Разрешено чтение"
 msgstr "Allowed reading"
 
@@ -5008,8 +5043,8 @@ msgstr "Allowed to delete"
 msgid "Описание СМС шлюза Carbon"
 msgstr "Description of SMS gateway Carbon"
 
-msgid "<strong>{status} СМС-шлюз Carbon.</strong> Его использование бесплатно, но есть ограничение - 2000 смс в месяц."
-msgstr "<strong>{status} Carbon SMS gateway.</strong> It can be used for free, but there is a limit - 2000 messages per month."
+msgid "<strong>{status} СМС-шлюз Carbon.</strong> Его использование бесплатно, но есть ограничение - 2000 смс (всего) на 4 месяца. После этого потребуется подключить другой шлюз."
+msgstr "<strong>{status} Carbon SMS gateway.</strong> It can be used for free, but there is a limit - 2000 messages (total) for 4 month. After that, you will need to connect another gateway."
 
 msgid "Выключен"
 msgstr "Disabled"
@@ -5091,6 +5126,9 @@ msgstr "Telephony"
 msgid "Телевидение"
 msgstr "TV"
 
+msgid "Выберите категорию VOIP"
+msgstr "Select VOIP category"
+
 msgid "Не указан коммутатор для записи порта"
 msgstr "Switch is not specified for record port"
 
@@ -5170,6 +5208,12 @@ msgstr "Can't move subscriber, because he has status of the movement: %s"
 msgid "Нельзя создавать абонента в корзине"
 msgstr "Can't create subscriber in recycle bin"
 
+msgid "Действующих абонентов нельзя переключать на другие лицевые счета"
+msgstr "Existing subscribers cannot be switched to other personal accounts"
+
+msgid "Нельзя отменить опцию \"Главный абонент\", пока лицевой счет используется другими абонентами"
+msgstr "You cannot cancel the \"Main subscriber\" option while the personal account is used by other subscribers"
+
 msgid "Превышена лицензия. Обратитесь в техническую поддержку."
 msgstr "License exceeded. Contact technical support."
 
@@ -5187,6 +5231,9 @@ msgstr "All services are not active"
 
 msgid "Услуги частично активны"
 msgstr "Services partially active"
+
+msgid "Помещен в корзину"
+msgstr "Placed in recycle bin"
 
 msgid "Ленивый"
 msgstr "Lazy"
@@ -5223,9 +5270,6 @@ msgstr "Number"
 #, fuzzy
 msgid "Квартира"
 msgstr "Quarter"
-
-msgid "Помещен в корзину"
-msgstr "Placed in recycle bin"
 
 msgid "Пользователь {0} восстановил из корзины абонента ABONENT_ID={1}."
 msgstr "User {0} has restored from recycle bin the subscriber ABONENT_ID={1}."
@@ -5457,7 +5501,16 @@ msgid "Диапазон пула пересекается с пулами {0}"
 msgstr ""
 
 msgid "{0} в {1} на {2}"
-msgstr "{0} in {1} on {2}"
+msgstr "{0} in {1} to {2}"
+
+msgid "{} в {} с {} на {} с ценой {}"
+msgstr "{} in {} from {} to {} with price {}"
+
+msgid "{} в {} с {} на {}"
+msgstr "{} in {} from {} to {}"
+
+msgid "{} в {} у {} на {}"
+msgstr "{} in {} of {} to {}"
 
 msgid "Не найден ни один шаблон для отправки, проверьте настройки"
 msgstr "Unable to find any template to send, check the settings"
@@ -5608,9 +5661,11 @@ msgstr "It is forbidden to add \"Promised payment\" with a negative amount"
 msgid "Необходимо установить менеджера"
 msgstr "You must to set the manager"
 
-#, fuzzy
 msgid "Транк {} уже задействован!"
-msgstr "{0} already blocked"
+msgstr "{0} already involved"
+
+msgid "Запрещено добавлять архивные услуги"
+msgstr "Add archived services is forbidden"
 
 msgid "Запрещено создавать новые системные услуги"
 msgstr "It is forbidden to create a new system services"
@@ -5664,6 +5719,9 @@ msgstr " SpeedIn={0} Kbit, Out={1} Kbit "
 msgid "Запрещено изменять услугу в тарифе, введённом в эксплуатацию"
 msgstr "It is forbidden to change a service in the tariff, that was placed in operation"
 
+msgid "Невозможно архивировать услугу пока существуют отложенные задачи с переходом на нее"
+msgstr "It is forbidden to archive a service while exists scheduled task that the switch to it"
+
 msgid "Вх. {0:.3f} {1} Исх. {2:.3f} {3}"
 msgstr "In. {0:.3f} {1} Out. {2:.3f} {3}"
 
@@ -5673,8 +5731,8 @@ msgstr "Sum: {0}"
 msgid " Стоимость услуги: {0:.2f} {1}"
 msgstr " Cost of services: {0:.2f} {1}"
 
-msgid "{name}:{type} ({summ:.2f} {currency} {msg}"
-msgstr "{name}:{type} ({summ:.2f} {currency} {msg}"
+msgid "{name}:{type} ({summ:.2f} {currency} {msg})"
+msgstr "{name}:{type} ({summ:.2f} {currency} {msg})"
 
 msgid "Нельзя удалять системные услуги"
 msgstr "You can't remove system services"
@@ -5708,6 +5766,12 @@ msgstr " active since {0}"
 
 msgid " (не задано время активности)"
 msgstr " (activity time is not set)"
+
+msgid "Услуга {} активируется согласно условиям активности"
+msgstr "Service {} is activated according to the conditions of activity"
+
+msgid "Услуга {} деактивируется согласно условию активности: {}"
+msgstr "Service {} is deactivated according to the conditions of activity: {}"
 
 msgid "VOIP: Перерасчет по оператору {operator_id} за период с {sdate} по {edate}"
 msgstr ""
@@ -6125,6 +6189,12 @@ msgstr "Date of call"
 msgid "Получить тариф"
 msgstr "To receive a tariff"
 
+msgid "Сообщение уже отправлено, его невозможно отредактировать"
+msgstr "The message already sent and cannot be edited"
+
+msgid "Изменение условий обслуживания"
+msgstr "Changes to the service"
+
 msgid "Зарезервировать"
 msgstr "Make a reservation"
 
@@ -6144,25 +6214,20 @@ msgstr "by"
 msgid "Мастер создания NAS: шаг %(step1)s из %(cnt)s"
 msgstr "NAS Wizard: step %(step1)s of %(cnt)s"
 
-#, fuzzy
 msgid "Предыдущая"
-msgstr "Previous quarter"
+msgstr "Previous"
 
-#, fuzzy
 msgid "Первая"
-msgstr "Service"
+msgstr "First"
 
-#, fuzzy
 msgid "Последняя"
-msgstr "Subnet"
+msgstr "Last"
 
-#, fuzzy
 msgid "Следующая"
-msgstr "Next pool"
+msgstr "Next"
 
-#, fuzzy
 msgid "Записей на странице"
-msgstr "Number of lines per page"
+msgstr "Entries per page"
 
 msgid "Распечатать"
 msgstr "Print"
@@ -6181,6 +6246,9 @@ msgstr "Print"
 
 msgid "Ничего не найдено"
 msgstr "Nothing found"
+
+msgid "В архиве!"
+msgstr "In archive!"
 
 msgid "Скачать вывод"
 msgstr "Download the output"
@@ -6230,13 +6298,11 @@ msgstr "Value"
 msgid "Добавить"
 msgstr "Add"
 
-#, fuzzy
 msgid "Обновление..."
-msgstr "Direction"
+msgstr "Updating..."
 
-#, fuzzy
 msgid "Обновить по ИНН"
-msgstr "Update list"
+msgstr "Update via INN (RU TIN)"
 
 msgid "Найти"
 msgstr "Find"
@@ -6394,6 +6460,9 @@ msgstr "Comments"
 
 msgid "Фильтр"
 msgstr "Filter"
+
+msgid "Скрыть нулевые строки"
+msgstr "Hide zero lines"
 
 msgid "Отфильтровать"
 msgstr "To filter"
@@ -7025,21 +7094,20 @@ msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1
 msgid "<a href=\"/static/admin/1c/carbonsoft1c82.epf\" download>Обработка для 1С 8.2 Бухгалтерия ред. 2.0</a>"
 msgstr "<a href=\"/static/admin/1c/carbonsoft1c82.epf\" download>Processing for 1C 8.2 Accounting ed. 2.0</a>"
 
-#, fuzzy
-msgid "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Обработка для 1С 8.3.5 и ниже, Бухгалтерия ред. 3.0</a>"
-msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1C 8.0 Accounting ed. 2.0</a>"
+msgid "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Обработка для 1С 8.3.5 and lower, Бухгалтерия ред. 3.0</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Processing for 1С 8.3.5 and lower, Accounting ed. 3.0</a>"
 
-#, fuzzy
 msgid "<a href=\"/static/admin/1c/carbonsoft1c83_6_3.epf\" download>Обработка для 1С 8.3.6, Бухгалтерия ред. 3.0</a>"
-msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1C 8.0 Accounting ed. 2.0</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_6_3.epf\" download>Processing for 1С 8.3.6, Accounting ed. 3.0</a>"
 
-#, fuzzy
 msgid "<a href=\"/static/admin/1c/carbonsoft1c83_10_2.epf\" download>Обработка для 1С 8.3.10, Бухгалтерия ред. 3.0</a>"
-msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1C 8.0 Accounting ed. 2.0</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_10_2.epf\" download>Processing for 1С 8.3.10, Accounting ed. 3.0</a>"
 
-#, fuzzy
 msgid "<a href=\"/static/admin/1c/carbonsoft1c83_13_16.epf\" download>Обработка для 1С 8.3.13.1644, Бухгалтерия ред. 3.0 (3.0.67.63)</a>"
-msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1C 8.0 Accounting ed. 2.0</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_13_16.epf\" download>Processing for 1С 8.3.13.1644, Accounting ed. 3.0 (3.0.67.63)</a>"
+
+msgid "<a href=\"/static/admin/1c/carbonsoft1c83_0542.epf\" download>Обработка для 1С 8.3, Бухгалтерия Предприятия, для биллинга 5.42+</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_0542.epf\" download>Processing for 1C 8.3, Бухгалтерия Предприятия, for billing system version 5.42+</a>"
 
 msgid "Интеграция 1С"
 msgstr "Integration with 1C"
@@ -7229,9 +7297,17 @@ msgstr "{0} on {1}"
 msgid "Дополнительно"
 msgstr "Additionally"
 
-#, fuzzy
-#~ msgid "Скрыть нулевые строки"
-#~ msgstr "Network settings"
+#~ msgid "Галочка"
+#~ msgstr "Check mark"
+
+#~ msgid "Список"
+#~ msgstr "List"
+
+#~ msgid "Модель"
+#~ msgstr "Model"
+
+#~ msgid "Время"
+#~ msgstr "Time"
 
 #~ msgid "Входящий трафик"
 #~ msgstr "Incoming traffic"
@@ -7505,9 +7581,6 @@ msgstr "Additionally"
 
 #~ msgid "Архивный аудит"
 #~ msgstr "Archive audit"
-
-#~ msgid "Системный аудит"
-#~ msgstr "System audit"
 
 #~ msgid "Нет unique_form_post_id в форме!!!"
 #~ msgstr "No unique_form_post_id in form!!!"
