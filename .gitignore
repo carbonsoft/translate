@@ -1,0 +1,8 @@
+# Репозитории для перевода
+./carbon_db/
+./daemons/
+./django-appadmin/
+./djsite/
+
+# Временные файлы
+./data_system.sql.diff.*
