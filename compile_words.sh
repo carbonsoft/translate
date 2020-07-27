@@ -13,6 +13,6 @@ cur_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $BASE_DIR
 
 python2.6 /app/base/usr/lib/python2.6/site-packages/django/bin/django-admin.py compilemessages
-cp $BASE_DIR/*.mo $cur_dir/
+cp $BASE_DIR$LOCALE_DIR/*.mo $cur_dir/
 # echo "$0 $@ [$$] SUCCESS"
 exit 0
