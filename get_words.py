@@ -130,10 +130,10 @@ def _init():
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/django-appadmin.git', 'django-appadmin')
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/djsite.git', 'djsite')
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/carbon_db.git', 'carbon_db')
-    copy_no_overwrite(DAEMONS_TR_PATH, os.path.join(DAEMONS_PATH, 'translate.po'))
-    copy_no_overwrite(BASE_TR_PATH, os.path.join(BASE_DJANGO_PATH, DJANGO_TR_FILE_PATH))
-    copy_no_overwrite(BILLING_TR_PATH, os.path.join(BILLING_DJANGO_PATH, DJANGO_TR_FILE_PATH))
-    copy_no_overwrite(os.path.join(CUR_DIR, 'data_system.sql'), DB_PATH)
+    shutil.copy(DAEMONS_TR_PATH, os.path.join(DAEMONS_PATH, 'translate.po'))
+    shutil.copy(BASE_TR_PATH, os.path.join(BASE_DJANGO_PATH, DJANGO_TR_FILE_PATH))
+    shutil.copy(BILLING_TR_PATH, os.path.join(BILLING_DJANGO_PATH, DJANGO_TR_FILE_PATH))
+    shutil.copy(os.path.join(CUR_DIR, 'data_system.sql'), DB_PATH)
 
 
 if __name__ == '__main__':
