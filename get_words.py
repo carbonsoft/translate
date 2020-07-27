@@ -28,7 +28,10 @@ def get_django_billing_words():
     logger.info(res)
     if res[0]:
         raise Exception(u'Ошибка генерации фраз для перевода')
-    shutil.copy(BILLING_DJANGO_PATH + DJANGO_TR_FILE_PATH, BILLING_TR_PATH)
+    if os.path.isfile(BILLING_DJANGO_PATH + DJANGO_TR_FILE_PATH):
+        shutil.copy(BILLING_DJANGO_PATH + DJANGO_TR_FILE_PATH, BILLING_TR_PATH)
+    else:
+        shutil.copy('/app/asr_billing/usr/local/www/sites/' + DJANGO_TR_FILE_PATH, BILLING_TR_PATH)
     # TODO пока закомментируем
     # _get_daemons_words()
     # # Обьединим переводы
