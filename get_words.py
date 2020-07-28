@@ -3,6 +3,7 @@
 import filecmp
 import logging
 import os
+import re
 import shutil
 
 import argparse
@@ -135,6 +136,30 @@ def _init():
     shutil.copy(BILLING_TR_PATH, os.path.join(BILLING_DJANGO_PATH, DJANGO_TR_FILE_PATH))
 
 
+def extract_variable_from_bash(variable, data):
+    value = re.search(r'(.*?{0}.*?)\n'.format(variable), data).group(0).split('=')[1]
+    value = value.replace("'", '').replace('\n', '')
+    return value
+
+
+def install():
+    with open(os.path.join(CUR_DIR, 'translate.hook'), 'r') as hook_file:
+        hook_data = hook_file.read()
+
+    base_django_path = './' + extract_variable_from_bash('BASE_DJANGO_PATH', hook_data)
+    billing_django_path = './' + extract_variable_from_bash('BILLING_DJANGO_PATH', hook_data)
+    daemons_path = './' + extract_variable_from_bash('DAEMONS_PATH', hook_data)
+    locale_path = extract_variable_from_bash('LOCALE_PATH', hook_data)
+
+    daemons_tr_path = os.path.join('/app/asr_billing/', daemons_path, 'daemons.mo')
+    billing_django_tr_path = os.path.join('/app/asr_billing/', billing_django_path, locale_path, 'django.mo')
+    base_django_tr_path = os.path.join('/app/base/', base_django_path, locale_path, 'django.mo')
+
+    shutil.copy(DAEMONS_TR_PATH.replace('.po', '.mo'), daemons_tr_path)
+    shutil.copy(BILLING_TR_PATH.replace('.po', '.mo'), billing_django_tr_path)
+    shutil.copy(BASE_TR_PATH.replace('.po', '.mo'), base_django_tr_path)
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Утилита получает файлы фраз для перевода посредством Django')
     parser.add_argument('--cmd', dest='cmd', default='get',
@@ -150,3 +175,5 @@ if __name__ == '__main__':
         compile_translate()
     elif args.cmd == 'init':
         _init()
+    elif args.cmd == 'install':
+        install()
