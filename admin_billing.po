@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-28 02:34+0500\n"
+"POT-Creation-Date: 2020-07-28 13:27+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7094,7 +7094,7 @@ msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1
 msgid "<a href=\"/static/admin/1c/carbonsoft1c82.epf\" download>Обработка для 1С 8.2 Бухгалтерия ред. 2.0</a>"
 msgstr "<a href=\"/static/admin/1c/carbonsoft1c82.epf\" download>Processing for 1C 8.2 Accounting ed. 2.0</a>"
 
-msgid "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Обработка для 1С 8.3.5 и ниже, Бухгалтерия ред. 3.0"
+msgid "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Обработка для 1С 8.3.5 и ниже, Бухгалтерия ред. 3.0</a>"
 msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Processing for 1С 8.3.5 and lower, Accounting ed. 3.0</a>"
 
 msgid "<a href=\"/static/admin/1c/carbonsoft1c83_6_3.epf\" download>Обработка для 1С 8.3.6, Бухгалтерия ред. 3.0</a>"
@@ -7124,9 +7124,8 @@ msgstr "Search in text fields"
 msgid "не прочитан абонентом"
 msgstr "isn't read by the subscriber"
 
-#, fuzzy
 msgid "Активность"
-msgstr "Cost"
+msgstr "Activity"
 
 msgid "Введите данные заявки на подключение"
 msgstr "Enter data request for connection"
@@ -7146,20 +7145,19 @@ msgstr "Request for connection"
 msgid "Подключение нового абонента"
 msgstr "Connect the new subscriber"
 
-#, fuzzy
 msgid "Россия"
-msgstr "Session"
+msgstr "Russia"
 
-#, fuzzy
 msgid "Адреса"
-msgstr "Destination"
+msgstr "Addresses"
 
-#, fuzzy
 msgid ""
 "Ошибка создания дома:\n"
 "\n"
 "{0}"
-msgstr "Error saving:"
+msgstr "Address creation error:\n"
+"\n"
+"{0}"
 
 msgid "Доступ запрещен"
 msgstr "Access denied"
@@ -7185,9 +7183,9 @@ msgstr "User {0} removed the permissions of the group {1} to group of subscriber
 msgid "Пользователь {0} добавил право доступа группы {1} к группе абонентов {2}"
 msgstr "User {0} has added the permission of the group {1} to group of subscribers {2}"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Зарезервировано %s номеров"
-msgstr "Reserved {0}/{1}"
+msgstr "Reserved %s numbers"
 
 msgid "Не удалось зарезервировать номера"
 msgstr "Failed to reserve a room"
@@ -7282,9 +7280,8 @@ msgstr "Without filter"
 msgid "Не задана дата активности"
 msgstr "Date of activity isn't set"
 
-#, fuzzy
 msgid "Направления/Тарифы"
-msgstr "Directions"
+msgstr "Directions/Tariffs"
 
 #, fuzzy
 msgid "Географические коды"
