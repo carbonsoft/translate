@@ -36,7 +36,23 @@ def main(options):
         values = pattern_insert_into_values.search(insert_into[1]).groupdict()['values']
         table = head['table']
         fields = head['fields']
-        content = {fields: values}
+
+        fields_list = fields.split(',')
+        values_list = values.split(',')
+
+        if len(fields_list) != len(values_list):
+            logger.error('Not match fields {0} and values {1}'.format(len(fields_list), len(values_list)))
+            logger.error(json.dumps(insert_into, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+            logger.error(fields)
+            logger.error(values)
+            logger.error(json.dumps(fields_list, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+            logger.error(json.dumps(values_list, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+            continue
+
+        content = {}
+        for i, field in enumerate(fields_list):
+            content[field.strip()] = values_list[i].strip()
+
         if not res.get(table):
             res[table] = []
         res[table].append(content)
