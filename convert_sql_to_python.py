@@ -1,8 +1,8 @@
 #!/usr/bin/python2.6
 # -*- coding: utf-8 -*-
+import argparse
 import json
 import logging
-from optparse import OptionParser
 import os
 import re
 import sys
@@ -47,17 +47,11 @@ def main(options):
     return 0
 
 
-def parse_args():
-    import argparse
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Convert the SQL INSERT INTO to Python variables')
     parser.add_argument('--debug', help='Verbose output', action='store_true')
     parser.add_argument('--sql-dump', help='Path to SQL dump file with INSERT INTO', required=True)
     args = parser.parse_args()
-    return args
-
-
-if __name__ == "__main__":
-    args = parse_args()
 
     script_name = os.path.basename(sys.argv[0]).split('.py')[0]
     logger = setupLogger(script_name, use_stderr=True, level=logging.DEBUG if args.debug else logging.INFO)
