@@ -12,21 +12,15 @@ from python_tools.setup_logger import setupLogger
 logger = None
 
 
-def main(options):
-    if not os.path.isfile(options.sql_dump):
-        logger.error('{0} is not file'.format(options.sql_dump))
-        return 2
-
+def convert_sql_file_to_list_with_insert_into_sql_lines(sql_file_path):
     pattern_sql_comment_slash = re.compile(r'^/\*?', re.IGNORECASE)
     pattern_sql_set = re.compile(r'^SET ', re.IGNORECASE)
     pattern_sql_connect = re.compile(r'^CONNECT ', re.IGNORECASE)
     pattern_sql_commit_work = re.compile(r'^COMMIT WORK;', re.IGNORECASE)
     pattern_sql_insert_into = re.compile(r'^INSERT INTO ', re.IGNORECASE)
-    pattern_insert_into = re.compile(r'INSERT INTO\s+(?P<table>.*)\s+\((?P<fields>.*)\)\s+VALUES\s+\((?P<values>.*)\);', re.IGNORECASE)
-    pattern_split_by_comma = re.compile(',(?=(?:[^\']*\'[^\']*\')*[^\']*$)')
 
     sql_insert_into_list = []
-    with open(options.sql_dump, 'r') as sql_file:
+    with open(sql_file_path, 'r') as sql_file:
         sql_insert_into_last_item = None
         for line in sql_file:
             line = line.strip()
@@ -47,7 +41,18 @@ def main(options):
                 continue
             sql_insert_into_last_item = sql_insert_into_last_item + '\r' + line
         sql_insert_into_list.append(sql_insert_into_last_item)
-    del sql_file
+    return sql_insert_into_list
+
+
+def main(options):
+    if not os.path.isfile(options.sql_dump):
+        logger.error('{0} is not file'.format(options.sql_dump))
+        return 2
+
+    pattern_insert_into = re.compile(r'INSERT INTO\s+(?P<table>.*)\s+\((?P<fields>.*)\)\s+VALUES\s+\((?P<values>.*)\);', re.IGNORECASE)
+    pattern_split_by_comma = re.compile(',(?=(?:[^\']*\'[^\']*\')*[^\']*$)')
+
+    sql_insert_into_list = convert_sql_file_to_list_with_insert_into_sql_lines(options.sql_dump)
 
     insert_into_data = {}
     for sql_insert_into in sql_insert_into_list:
