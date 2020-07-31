@@ -17,49 +17,62 @@ def main(options):
         logger.error('{0} is not file'.format(options.sql_dump))
         return 2
 
+    pattern_sql_comment_slash = re.compile(r'^/\*?', re.IGNORECASE)
+    pattern_sql_set = re.compile(r'^SET ', re.IGNORECASE)
+    pattern_sql_connect = re.compile(r'^CONNECT ', re.IGNORECASE)
+    pattern_sql_commit_work = re.compile(r'^COMMIT WORK;', re.IGNORECASE)
+    pattern_sql_insert_into = re.compile(r'^INSERT INTO ', re.IGNORECASE)
+    pattern_insert_into = re.compile(r'INSERT INTO\s+(?P<table>.*)\s+\((?P<fields>.*)\)\s+VALUES\s+\((?P<values>.*)\);', re.IGNORECASE)
+    pattern_split_by_comma = re.compile(',(?=(?:[^\']*\'[^\']*\')*[^\']*$)')
+
+    sql_insert_into_list = []
     with open(options.sql_dump, 'r') as sql_file:
-        sql_raw = sql_file.read()
-    sql_raw = sql_raw.replace('\n', '')
-
-    insert_into_list = re.findall(r'INSERT INTO(.*?)VALUES(.*?);', sql_raw, re.IGNORECASE)
-
-    del sql_raw
+        sql_insert_into_last_item = None
+        for line in sql_file:
+            line = line.strip()
+            if line == '':
+                continue
+            if pattern_sql_comment_slash.match(line):
+                continue
+            if pattern_sql_set.match(line):
+                continue
+            if pattern_sql_connect.match(line):
+                continue
+            if pattern_sql_commit_work.match(line):
+                continue
+            if pattern_sql_insert_into.match(line):
+                if sql_insert_into_last_item:
+                    sql_insert_into_list.append(sql_insert_into_last_item)
+                sql_insert_into_last_item = line
+                continue
+            sql_insert_into_last_item = sql_insert_into_last_item + '\r' + line
+        sql_insert_into_list.append(sql_insert_into_last_item)
     del sql_file
 
-    pattern_insert_into_head = re.compile(r'\s*(?P<table>.*)\s*\((?P<fields>.*)\)')
-    pattern_insert_into_values = re.compile(r'\s*\(\s*(?P<values>.*)\s*\)\s*')
+    insert_into_data = {}
+    for sql_insert_into in sql_insert_into_list:
+        insert_into = pattern_insert_into.search(sql_insert_into).groupdict()
+        table = insert_into['table'].upper()
+        values = pattern_split_by_comma.split(insert_into['values'])
+        fields = pattern_split_by_comma.split(insert_into['fields'])
 
-    res = {}
-
-    for insert_into in insert_into_list:
-        head = pattern_insert_into_head.search(insert_into[0]).groupdict()
-        values = pattern_insert_into_values.search(insert_into[1]).groupdict()['values']
-        table = head['table']
-        fields = head['fields']
-
-        fields_list = fields.split(',')
-        values_list = values.split(',')
-
-        if len(fields_list) != len(values_list):
-            logger.error('Not match fields {0} and values {1}'.format(len(fields_list), len(values_list)))
-            logger.error(json.dumps(insert_into, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
-            logger.error(fields)
-            logger.error(values)
-            logger.error(json.dumps(fields_list, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
-            logger.error(json.dumps(values_list, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+        if len(fields) != len(values):
+            logger.error('Not match fields {0} and values {1}'.format(len(fields), len(values)))
+            logger.error(json.dumps(sql_insert_into, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+            logger.error(json.dumps(fields, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+            logger.error(json.dumps(values, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
             continue
 
         content = {}
-        for i, field in enumerate(fields_list):
-            content[field.strip()] = values_list[i].strip()
+        for i, field in enumerate(fields):
+            content[field.strip()] = values[i].strip().strip("'")
 
-        if not res.get(table):
-            res[table] = []
-        res[table].append(content)
+        if not insert_into_data.get(table):
+            insert_into_data[table] = []
+        insert_into_data[table].append(content)
+    del sql_insert_into_list
 
-    del insert_into_list
-
-    logger.info(json.dumps(res, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+    logger.info(json.dumps(insert_into_data, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
     return 0
 
 
