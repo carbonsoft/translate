@@ -44,15 +44,9 @@ def convert_sql_file_to_list_with_insert_into_sql_lines(sql_file_path):
     return sql_insert_into_list
 
 
-def main(options):
-    if not os.path.isfile(options.sql_dump):
-        logger.error('{0} is not file'.format(options.sql_dump))
-        return 2
-
+def convert_list_with_insert_into_sql_lines_to_json(sql_insert_into_list):
     pattern_insert_into = re.compile(r'INSERT INTO\s+(?P<table>.*)\s+\((?P<fields>.*)\)\s+VALUES\s+\((?P<values>.*)\);', re.IGNORECASE)
     pattern_split_by_comma = re.compile(',(?=(?:[^\']*\'[^\']*\')*[^\']*$)')
-
-    sql_insert_into_list = convert_sql_file_to_list_with_insert_into_sql_lines(options.sql_dump)
 
     insert_into_data = {}
     for sql_insert_into in sql_insert_into_list:
@@ -75,7 +69,16 @@ def main(options):
         if not insert_into_data.get(table):
             insert_into_data[table] = []
         insert_into_data[table].append(content)
-    del sql_insert_into_list
+    return insert_into_data
+
+
+def main(options):
+    if not os.path.isfile(options.sql_dump):
+        logger.error('{0} is not file'.format(options.sql_dump))
+        return 2
+
+    sql_insert_into_list = convert_sql_file_to_list_with_insert_into_sql_lines(options.sql_dump)
+    insert_into_data = convert_list_with_insert_into_sql_lines_to_json(sql_insert_into_list)
 
     logger.info(json.dumps(insert_into_data, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
     return 0
