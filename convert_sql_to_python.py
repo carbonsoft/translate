@@ -72,6 +72,18 @@ def convert_list_with_insert_into_sql_lines_to_json(sql_insert_into_list):
     return insert_into_data
 
 
+def convert_json_to_python_variables(insert_into_json):
+    return insert_into_json
+
+
+def filter_sql_lines_for_translate(python_variables_list):
+    return python_variables_list
+
+
+def write_python_variables_to_code_file(python_variables_list):
+    pass
+
+
 def main(options):
     if not os.path.isfile(options.sql_dump):
         logger.error('{0} is not file'.format(options.sql_dump))
@@ -79,6 +91,9 @@ def main(options):
 
     sql_insert_into_list = convert_sql_file_to_list_with_insert_into_sql_lines(options.sql_dump)
     insert_into_data = convert_list_with_insert_into_sql_lines_to_json(sql_insert_into_list)
+    python_variables = convert_json_to_python_variables(insert_into_data)
+    python_variables = filter_sql_lines_for_translate(python_variables)
+    write_python_variables_to_code_file(python_variables)
 
     logger.info(json.dumps(insert_into_data, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
     return 0
