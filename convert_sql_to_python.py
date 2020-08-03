@@ -100,8 +100,10 @@ def is_value_for_translate(value):
     return False
 
 
-def write_python_variables_to_code_file(python_variables_list):
-    pass
+def write_python_variables_to_code_file(python_file_path, python_variables_list):
+    with open(python_file_path, 'w') as python_file:
+        for python_code in python_variables_list:
+            python_file.write(python_code + '\n')
 
 
 def main(options):
@@ -112,7 +114,7 @@ def main(options):
     sql_insert_into_list = convert_sql_file_to_list_with_insert_into_sql_lines(options.sql_dump)
     insert_into_data = convert_list_with_insert_into_sql_lines_to_json(sql_insert_into_list)
     python_variables = convert_json_to_python_variables(insert_into_data)
-    write_python_variables_to_code_file(python_variables)
+    write_python_variables_to_code_file(options.python_file, python_variables)
 
     logger.info(json.dumps(python_variables, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
     logger.info(json.dumps(len(python_variables), indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
@@ -123,6 +125,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Convert the SQL INSERT INTO to Python variables')
     parser.add_argument('--debug', help='Verbose output', action='store_true')
     parser.add_argument('--sql-dump', help='Path to SQL dump file with INSERT INTO', required=True)
+    parser.add_argument('--python-file', help='Path to new Python file', default='data_system_translate.py')
     args = parser.parse_args()
 
     script_name = os.path.basename(sys.argv[0]).split('.py')[0]
