@@ -132,8 +132,7 @@ def main(options):
     insert_into_data = convert_list_with_insert_into_sql_lines_to_json(sql_insert_into_list)
     python_variables = convert_json_to_python_variables(insert_into_data)
     write_python_variables_to_code_file(options.python_file, python_variables)
-
-    logger.info(json.dumps(python_variables, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+    logger.debug(json.dumps(python_variables, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
     logger.info(json.dumps(len(python_variables), indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
     return 0
 
