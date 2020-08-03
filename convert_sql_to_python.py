@@ -106,9 +106,26 @@ def write_python_variables_to_code_file(python_file_path, python_variables_list)
             python_file.write(python_code + '\n')
 
 
+def check_file_writable(file_path):
+    if os.path.exists(file_path):
+        if os.path.isfile(file_path):
+            return os.access(file_path, os.W_OK)
+        else:
+            # path is a dir, so cannot write as a file
+            return False
+    parent_dir = os.path.dirname(file_path)
+    if not parent_dir:
+        parent_dir = '.'
+    return os.access(parent_dir, os.W_OK)
+
+
 def main(options):
     if not os.path.isfile(options.sql_dump):
         logger.error('{0} is not file'.format(options.sql_dump))
+        return 2
+
+    if not check_file_writable(options.python_file):
+        logger.error('{0} is not file'.format(options.python_file))
         return 2
 
     sql_insert_into_list = convert_sql_file_to_list_with_insert_into_sql_lines(options.sql_dump)
