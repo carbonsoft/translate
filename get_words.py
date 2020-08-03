@@ -138,6 +138,8 @@ def install():
     shutil.copy(BILLING_TR_PATH.replace('.po', '.mo'), billing_django_tr_path)
     shutil.copy(BASE_TR_PATH.replace('.po', '.mo'), base_django_tr_path)
 
+    logger.info(u'Перевод установлен')
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Утилита получает файлы фраз для перевода посредством Django')
