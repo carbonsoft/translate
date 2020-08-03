@@ -84,8 +84,8 @@ def convert_json_to_python_variables(insert_into_json):
             for key, value in item.iteritems():
                 if not is_value_for_translate(value):
                     continue
-                value = value.replace('\r', '\r\n')
-                python_code = "variable = _u'{val}'  # {comment}".format(val=value, comment=key)
+                value = value.replace('\r', '\\r\\n')
+                python_code = "variable = _(u'{val}')  # {comment}".format(val=value, comment=key)
                 python_variables_list.append(python_code)
     return python_variables_list
 
