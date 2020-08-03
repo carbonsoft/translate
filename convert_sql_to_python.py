@@ -73,11 +73,31 @@ def convert_list_with_insert_into_sql_lines_to_json(sql_insert_into_list):
 
 
 def convert_json_to_python_variables(insert_into_json):
-    return insert_into_json
-
-
-def filter_sql_lines_for_translate(python_variables_list):
+    python_variables_list = [
+        '#!/usr/bin/python2.7',
+        '# -*- coding: utf-8 -*-',
+        'from django.utils.translation import ugettext as _'
+    ]
+    for table in insert_into_json:
+        python_variables_list.append('# ' + table)
+        for item in insert_into_json[table]:
+            for key, value in item.iteritems():
+                if not is_value_for_translate(value):
+                    continue
+                value = value.replace('\r', '\r\n')
+                python_code = "variable = _u'{val}'  # {comment}".format(val=value, comment=key)
+                python_variables_list.append(python_code)
     return python_variables_list
+
+
+def has_cyrillic(text):
+    return bool(re.search('[а-яА-Я]', text))
+
+
+def is_value_for_translate(value):
+    if has_cyrillic(value):
+        return True
+    return False
 
 
 def write_python_variables_to_code_file(python_variables_list):
@@ -92,10 +112,10 @@ def main(options):
     sql_insert_into_list = convert_sql_file_to_list_with_insert_into_sql_lines(options.sql_dump)
     insert_into_data = convert_list_with_insert_into_sql_lines_to_json(sql_insert_into_list)
     python_variables = convert_json_to_python_variables(insert_into_data)
-    python_variables = filter_sql_lines_for_translate(python_variables)
     write_python_variables_to_code_file(python_variables)
 
-    logger.info(json.dumps(insert_into_data, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+    logger.info(json.dumps(python_variables, indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
+    logger.info(json.dumps(len(python_variables), indent=2, sort_keys=True, ensure_ascii=False, encoding='utf8'))
     return 0
 
 
