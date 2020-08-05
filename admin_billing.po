@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-20 13:51+0500\n"
+"POT-Creation-Date: 2020-08-04 02:16+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1142,9 +1142,11 @@ msgstr "Country"
 msgid "Город"
 msgstr "City"
 
-#, fuzzy
+msgid "Населенный пункт"
+msgstr "Settlement"
+
 msgid "Регион"
-msgstr "Login"
+msgstr "State"
 
 msgid "Улица"
 msgstr "Street"
@@ -1194,33 +1196,29 @@ msgstr "ID of home"
 msgid "Дата синхронизации"
 msgstr "Synchronization server"
 
-#, fuzzy
 msgid "Тип адреса"
-msgstr "Type of request"
+msgstr "Type of address"
 
-#, fuzzy
 msgid "Полный адрес одной строкой"
-msgstr "Forwarded by service"
+msgstr "Full address in one line"
 
-#, fuzzy
 msgid "Тип региона"
-msgstr "Type of template"
+msgstr "Type of state"
 
-#, fuzzy
 msgid "Тип района"
-msgstr "Type of template"
+msgstr "Type of area"
 
-#, fuzzy
 msgid "Тип города"
-msgstr "Type of request"
+msgstr "Type of city"
 
-#, fuzzy
+msgid "Тип населенного пункта"
+msgstr "Type of settlement"
+
 msgid "Тип улицы"
-msgstr "Service's type"
+msgstr "Type of street"
 
-#, fuzzy
 msgid "Тип дома"
-msgstr "ID of home"
+msgstr "Type of house"
 
 #, fuzzy
 msgid "Тип корпуса"
@@ -1290,6 +1288,15 @@ msgstr "Done"
 
 msgid "Тип задачи"
 msgstr "Type of task"
+
+msgid "Какую услугу меняем"
+msgstr "Service to change"
+
+msgid "На какую услугу меняем"
+msgstr "Switch to service"
+
+msgid "Новая стоимость"
+msgstr "New cost"
 
 msgid "Задача выполняется"
 msgstr "Task is performed"
@@ -1388,6 +1395,9 @@ msgstr "Dynamic IP"
 
 msgid "Динамический NAT"
 msgstr "Dynamic NAT"
+
+msgid "Не отправлять framed-ip-address"
+msgstr "Don't send framed-ip-address"
 
 msgid "Проверять login"
 msgstr "Check login"
@@ -1662,6 +1672,9 @@ msgstr "Disable upon reaching the spent minutes"
 #, fuzzy
 msgid "Сохранять IP только после авторизации"
 msgstr "Write off, only if there was a traffic"
+
+msgid "Токен авторизации"
+msgstr "Authorization token"
 
 msgid "Статус баланса"
 msgstr "Balance status"
@@ -2376,6 +2389,9 @@ msgstr "--Quantity of hours to reset the statistics"
 msgid "Правило срабатывает только если положительный баланс"
 msgstr "The rule is triggered only if a positive balance"
 
+msgid "Скачано+Отправлено, более чем, МБ"
+msgstr "Sent+Downloaded more than, MB"
+
 msgid "Блокирующее правило"
 msgstr "Blocking rule"
 
@@ -2751,9 +2767,14 @@ msgstr "Generated password"
 msgid "Дата выдачи токена восстановления пароля"
 msgstr "Date of beginning of service"
 
-#, fuzzy
 msgid "Внешний ИД"
-msgstr "External traffic"
+msgstr "External ID"
+
+msgid "Учетная запись не будет выводиться в блоке Информация в карточке абонента"
+msgstr "The account will not be displayed in the Information block in the subscriber card"
+
+msgid "Не отображать в карточке абонента"
+msgstr "Do not display in the subscriber card"
 
 msgid "1-нужно добавить -1-нужно удалить 0-не нужно ничего делать"
 msgstr "1-need to add -1-need to delete 0-do nothing"
@@ -3018,9 +3039,8 @@ msgstr "Downloaded all less than, MB"
 msgid "Отправлено всего менее чем, МБ"
 msgstr "Sent all less than, MB"
 
-#, fuzzy
 msgid "Скачано+Отправлено всего менее чем, МБ"
-msgstr "Sent all less than, MB"
+msgstr "Sent+Downloaded all less than, MB"
 
 msgid "Точность округления трафика"
 msgstr "Precision traffic rounding"
@@ -3224,6 +3244,24 @@ msgstr "Service type"
 msgid "Цена за единицу"
 msgstr "Price for day"
 
+msgid "Принято звонков более чем, шагов:"
+msgstr "Calls received more than, steps"
+
+msgid "Но менее чем, шагов:"
+msgstr "But less than, steps"
+
+msgid "Сделано звонков более чем, шагов:"
+msgstr "Calls made more than, steps"
+
+msgid "Сделано менее чем, шагов:"
+msgstr "Made less than, steps"
+
+msgid "Тарифицировать начиная с 1 секунды"
+msgstr "Charge starting from 1 second"
+
+msgid "Учитывать звонки только с NAS указанной группы"
+msgstr "Count calls only from NAS-server of specified group"
+
 msgid "Списывать, только если лимит не превышен"
 msgstr "Write off only if the limit is not exceeded"
 
@@ -3387,6 +3425,9 @@ msgstr "Enable production mode to count the calls (in this mode, you must config
 msgid "Через АТС проходят транзитные звонки"
 msgstr "Through telephone exchange transit calls pass"
 
+msgid "Авторизация через RADIUS по"
+msgstr "Authorization through RADIUS via"
+
 msgid "Целочисленное значение"
 msgstr "Integer"
 
@@ -3453,8 +3494,2475 @@ msgstr "<button name=\"clean_links\" value=\"%s\">Clean links</button>"
 msgid "На объект ссылаются: {0} {1}"
 msgstr "Object's links: {0} {1}"
 
+msgid "В любом случае"
+msgstr ""
+
+msgid "Заблокирован"
+msgstr "Blocked"
+
+msgid "Не заблокирован"
+msgstr "Not blocked"
+
+msgid "по vpn pptp, pppoe"
+msgstr "by vpn, pptp, pppoe"
+
+msgid "по ip static"
+msgstr "by ip static"
+
+msgid "по CarbonAgent"
+msgstr "by CarbonAgent"
+
+msgid "по ip+CarbonAgent"
+msgstr "by ip+CarbonAgent"
+
+msgid "через веб"
+msgstr "via web"
+
+msgid "через ip+веб"
+msgstr "via ip+web"
+
+msgid "любая через RADIUS"
+msgstr "any via RADIUS"
+
+msgid "по OPT82"
+msgstr "by OPT82"
+
+msgid "по ip+radius"
+msgstr "by ip+radius"
+
+msgid "Предоплата"
+msgstr "Prepayment"
+
+msgid "trust_blocked(Доступно заблокированным)"
+msgstr "trust_blocked(Available for blocked)"
+
+msgid "trust_negbal(Доступно при отрицательном балансе)"
+msgstr "trust_negbal(Available with a negative balance)"
+
+msgid "PC Роутер"
+msgstr "PC Router"
+
+msgid "Другой"
+msgstr "Another"
+
+msgid "Ижком"
+msgstr "Izhcom"
+
+msgid "Другое"
+msgstr "Another"
+
+msgid "АТС Iskratel SI3000"
+msgstr ""
+
+#, fuzzy
+msgid "OSS Схема"
+msgstr "Amount"
+
+msgid "Юнител TS004"
+msgstr ""
+
+msgid "OSS Схема VOIP"
+msgstr ""
+
+#, fuzzy
+msgid "SMG10XX(новый парсер)"
+msgstr "New tariff"
+
+msgid "OSS Схема IPTV"
+msgstr ""
+
+msgid "OSS схема"
+msgstr ""
+
+msgid "Адреса"
+msgstr "Addresses"
+
+#, fuzzy
+msgid "АкБарс Банк"
+msgstr "New folder"
+
+msgid "ВТБ 24"
+msgstr ""
+
+#, fuzzy
+msgid "Банк 24"
+msgstr "Block"
+
+#, fuzzy
+msgid "Банк Авангард"
+msgstr "Date of call"
+
+msgid "Тинькоф"
+msgstr ""
+
+msgid "Альфа-Банк"
+msgstr ""
+
+#, fuzzy
+msgid "Интехбанк"
+msgstr "Internet"
+
+#, fuzzy
+msgid "Мособлбанк"
+msgstr "PostPay"
+
+#, fuzzy
+msgid "МДМ Банк"
+msgstr "Created"
+
+msgid "Московский Индустриальный банк"
+msgstr ""
+
+#, fuzzy
+msgid "Газпромбанк"
+msgstr "Copied"
+
+#, fuzzy
+msgid "Банк Открытие"
+msgstr "Current balance"
+
+#, fuzzy
+msgid "Сбербанк России"
+msgstr "End of session"
+
+#, fuzzy
+msgid "Восточный Экспресс"
+msgstr "Postcode"
+
+#, fuzzy
+msgid "Глобэкс"
+msgstr "Check mark"
+
+#, fuzzy
+msgid "БТА-Казань"
+msgstr "Balance"
+
+msgid "Уральский Банк Реконструкции и Развития"
+msgstr ""
+
+#, fuzzy
+msgid "Хоум кредит"
+msgstr "Credit"
+
+#, fuzzy
+msgid "Зенит"
+msgstr "Debit"
+
+#, fuzzy
+msgid "Промсвязьбанк"
+msgstr "Plan version"
+
+#, fuzzy
+msgid "руб."
+msgstr "rub"
+
+#, fuzzy
+msgid "Рубли"
+msgstr "Amount"
+
+msgid "Администратор"
+msgstr "Administrator"
+
+msgid "Менеджер"
+msgstr "Manager"
+
+#, fuzzy
+msgid "Директор"
+msgstr "For Director"
+
+#, fuzzy
+msgid "Бухгалтер"
+msgstr "delete"
+
+#, fuzzy
+msgid "ФСБ"
+msgstr "ALL"
+
+#, fuzzy
+msgid "Главный Администратор"
+msgstr "CEOs"
+
+msgid "Все"
+msgstr "All"
+
+#, fuzzy
+msgid "Популярные Internet сервисы"
+msgstr "Popularity of tariffs"
+
+msgid "При парсе mac \"00\" превращаются в \"0\""
+msgstr ""
+
+#, fuzzy
+msgid "Открыт"
+msgstr "Closed"
+
+#, fuzzy
+msgid "Ожидает ответа"
+msgstr "ID of subscriber"
+
+msgid "Закрыт"
+msgstr "Closed"
+
+#, fuzzy
+msgid "Закрыто успешно"
+msgstr "Period-End Closing"
+
+#, fuzzy
+msgid "Закрыто неуспешно"
+msgstr "Period-End Closing"
+
+#, fuzzy
+msgid "Отложена"
+msgstr "Cancel"
+
+#, fuzzy
+msgid "Не найден пользователь!"
+msgstr "FLAG: End user"
+
+#, fuzzy
+msgid "Не найдена услуга!"
+msgstr "Service doesn't set!"
+
+#, fuzzy
+msgid "Не найдено направление!"
+msgstr "CashMachine method not found {0}"
+
+#, fuzzy
+msgid "Не найдена стоимость направления!"
+msgstr "Show directions"
+
+#, fuzzy
+msgid "Не найден NAS!"
+msgstr "Not found"
+
+#, fuzzy
+msgid "Не найден оператор связи для обсчета!"
+msgstr "Could not find a template for printing"
+
+#, fuzzy
+msgid "Не настроены услуги у оператора связи для обсчета!"
+msgstr "Can't delete operator with active subscribers."
+
+#, fuzzy
+msgid "Найденная услуга не активна!"
+msgstr "All services are not active"
+
+#, fuzzy
+msgid "Достигнут порог предупреждения"
+msgstr "Warning threshold"
+
+msgid "Занесено в Аудит"
+msgstr ""
+
+#, fuzzy
+msgid "Ручная отправка сообщения"
+msgstr "Setting messages"
+
+#, fuzzy
+msgid "Зачисление денег"
+msgstr "Integer"
+
+#, fuzzy
+msgid "Выставлен счет"
+msgstr "Account balance"
+
+#, fuzzy
+msgid "Отрицательный баланс"
+msgstr "Balance status"
+
+#, fuzzy
+msgid "Положительный баланс"
+msgstr "Additional commands"
+
+#, fuzzy
+msgid "Подключение услуги"
+msgstr "Connected service"
+
+#, fuzzy
+msgid "Сообщение из HelpDesk"
+msgstr "Error message"
+
+#, fuzzy
+msgid "Сообщение из CRM"
+msgstr "Messages"
+
+#, fuzzy
+msgid "Предупреждение за n дней"
+msgstr "Warn about limit for n days"
+
+#, fuzzy
+msgid "Данные для HotSpot"
+msgstr "Parameters"
+
+#, fuzzy
+msgid "Комментарий к заявке HelpDesk"
+msgstr "The comment is created."
+
+#, fuzzy
+msgid "Создание учетной записи из услуги"
+msgstr "Date of account creation"
+
 msgid "Анонимная заявка с веб-сайта"
 msgstr "Anonymous request from a web site"
+
+#, fuzzy
+msgid "Поздравление"
+msgstr "Felicitations"
+
+#, fuzzy
+msgid "Сброс пароля в Личном кабинете"
+msgstr "Disable changing the password in the profile"
+
+#, fuzzy
+msgid "Смена тарифа"
+msgstr "Change tariff on"
+
+#, fuzzy
+msgid "Формирование отчета"
+msgstr "Reversal of service"
+
+#, fuzzy
+msgid "Формирование счетов"
+msgstr "Reverse a counter id={0}"
+
+#, fuzzy
+msgid "Рассылка сообщений"
+msgstr "Setting messages"
+
+msgid "Редактирование абонента"
+msgstr "Editing a subscriber"
+
+#, fuzzy
+msgid "Замена услуги"
+msgstr "Service name"
+
+#, fuzzy
+msgid "Смена стоимости услуги"
+msgstr "The request for removal service"
+
+#, fuzzy
+msgid "Воскресение"
+msgstr "Reduction"
+
+#, fuzzy
+msgid "Суббота"
+msgstr "On the go"
+
+#, fuzzy
+msgid "Новогодние каникулы"
+msgstr "Name of a team"
+
+#, fuzzy
+msgid "Рождество Христово"
+msgstr "Number of ports"
+
+#, fuzzy
+msgid "День защитника Отечества"
+msgstr "Identifier"
+
+#, fuzzy
+msgid "Международный женский день"
+msgstr "Equal shares monthly per day"
+
+#, fuzzy
+msgid "Праздник Весны и Труда"
+msgstr "Holiday period"
+
+#, fuzzy
+msgid "День Победы"
+msgstr "Periods"
+
+#, fuzzy
+msgid "День России"
+msgstr "Statistics Day"
+
+#, fuzzy
+msgid "День народного единства"
+msgstr "Length of city number"
+
+msgid "Выставление счета фактуры, сброс кредита в начальное состояние(N=K,K=0)"
+msgstr ""
+
+msgid "Абонент оплатил деньги или за него оплачены виртуальные деньги D=sum"
+msgstr ""
+
+msgid "Приход"
+msgstr "Incoming"
+
+#, fuzzy
+msgid "Выставлен счет(Баланс не изменен)"
+msgstr "Invoice phone bills as agent's bills"
+
+#, fuzzy
+msgid "Счет по услугам"
+msgstr "All services"
+
+msgid "Остаток увеличить на дебет, сбросить дебет в ноль"
+msgstr ""
+
+#, fuzzy
+msgid "Баланс подвести"
+msgstr "Subnet mask"
+
+#, fuzzy
+msgid "Разные документы, Договор с абонентом"
+msgstr "Unblock all affiliated subscribers"
+
+#, fuzzy
+msgid "Документы"
+msgstr "Subscribers"
+
+#, fuzzy
+msgid "Создание бланка заказа"
+msgstr "Edit balance"
+
+#, fuzzy
+msgid "Бланк заказа"
+msgstr "Start of call"
+
+#, fuzzy
+msgid "Исправление баланса путем редактирования остатка"
+msgstr "The limit has been exceeded after editing the account"
+
+#, fuzzy
+msgid "Исправить баланс"
+msgstr "Put a tick"
+
+#, fuzzy
+msgid "Счет без детализации"
+msgstr "Authorization failed"
+
+#, fuzzy
+msgid "Счет на оплату"
+msgstr "Bill for prepay was exhibited"
+
+#, fuzzy
+msgid "Разные документы, Памятка абоненту"
+msgstr "Set the field to the subscriber"
+
+#, fuzzy
+msgid "Памятка абоненту"
+msgstr "Binding to subscriber"
+
+#, fuzzy
+msgid "Счет на услуги телефонии, оказываемые по агентской схеме"
+msgstr "Invoice phone bills as agent's bills"
+
+#, fuzzy
+msgid "Агентский счет"
+msgstr "Agent's bills"
+
+#, fuzzy
+msgid "Конвертация накопленных баллов"
+msgstr "Currency rate of converting bonus score"
+
+#, fuzzy
+msgid "Конвертация баллов"
+msgstr "Currency rate of converting bonus score"
+
+#, fuzzy
+msgid "Перевод в пользу другого абонента"
+msgstr "Money transfer from another subscriber via personal cabinet: {0} ({1})"
+
+#, fuzzy
+msgid "Перевод другому абоненту"
+msgstr "Money transfer to another subscriber via personal cabinet: {0} ({1})"
+
+msgid "Коэффициент для перевода внутреннего представления денег в системе в реальные денежные единицы"
+msgstr "Coefficient to convert the internal representation of money in the system in real monetary units"
+
+msgid "Единица тарифицируемой информации (1 МБайт)"
+msgstr "Unit of tariffed information (1 MByte)"
+
+msgid "Считать дроп drop трафик"
+msgstr "Count drop traffic"
+
+msgid "Байт дата"
+msgstr "Byte data"
+
+msgid "Оповещение пользователей по e-mail и winpopup"
+msgstr "User notification by e-mail and winpopup"
+
+#, fuzzy
+msgid "Общие"
+msgstr "Volume"
+
+msgid "Оповещение по почте и winpopup"
+msgstr "Notification by mail and winpopup"
+
+msgid "Версия"
+msgstr "Version"
+
+msgid "Версия справочных таблиц"
+msgstr "Version of reference tables"
+
+msgid "Интервал обмена с Carbon Agent, сек"
+msgstr "Interval of communication with Carbon Agent, sec"
+
+#, fuzzy
+msgid "Агент"
+msgstr "Subscriber"
+
+msgid "Рекомендуется 300-1200"
+msgstr "Recommended 300-1200"
+
+#, fuzzy
+msgid "Контроль финансовых пользователей"
+msgstr "FLAG: Financial user"
+
+msgid "Обязательно включить для провайдеров"
+msgstr "Obligatory enable for providers"
+
+msgid "Разрешить CarbonAgent для отключенных пользователей"
+msgstr "Allow CarbonAgent for disabled users"
+
+msgid "Разрешить получать информацию через Carbon Agent даже если пользователь отключен"
+msgstr "Allow to receive information via Carbon Agent even if user is disabled"
+
+msgid "Не отображать оповещения старее n, минут"
+msgstr "Do not display the alerts over n, minutes"
+
+msgid "Игнорировать неактуальные сообщения"
+msgstr "Ignore irrelevant messages"
+
+msgid "Отключать пользователей неактивных n, минут"
+msgstr "Disable users inactive for n, minutes"
+
+msgid "Отключать пользователей неактивных n, минут. Не рекомендуется."
+msgstr "Disable users inactive for n, minutes"
+
+msgid "Не отображать скорость и время в тарифах"
+msgstr "Do not show speed and time in tariffs"
+
+msgid "Личный кабинет"
+msgstr "Personal cabinet"
+
+msgid "Рекомендуется скорость добавить в имя тарифа"
+msgstr "Recommended to add speed to tariff name"
+
+msgid "Запрет подключения по VPN при другом типе авторизации"
+msgstr "Disable connection by VPN with another authorization type"
+
+msgid "По-умолчанию разрешено подключиться по VPN"
+msgstr "By default, allowed to connect via VPN"
+
+msgid "Разрешить подключать агенту только по имени без пароля"
+msgstr "Allow to connect to the agent only by name without a password"
+
+msgid "Не рекомендуется провайдерам"
+msgstr "Not recommended to providers"
+
+msgid "Не авторизовать по RADIUS при отрицательном балансе"
+msgstr "Don't authorize by RADIUS with a negative balance"
+
+msgid "Для простейшей схемы управления NAS сервером"
+msgstr "For a simple DNS server management scheme"
+
+msgid "Списывать ежедн. абон.плату у отключенных пользователей"
+msgstr "Write-off daily subscription fee from disabled users"
+
+msgid "Учет"
+msgstr "Accounting"
+
+msgid "Иначе списывать только если не отключен"
+msgstr "Otherwise, only to write off if not disabled"
+
+msgid "Разрешить event.sh, вкл в лок консоли а не в ICSM"
+msgstr "Allow event.sh, turn on in local console, but in in ICSM"
+
+msgid "Сквозная нумерация всех док. для конеч.пользователей"
+msgstr "Continuous numbering of all documents for end user"
+
+msgid "Рекомендуется для большинства провайдеров"
+msgstr "Recommended for most providers"
+
+msgid "Пускать в кабинет только со своего IP адреса"
+msgstr "Allow to login in personal cabinet only with own IP-address"
+
+msgid "Не пускать в личный кабинет не со своего IP-адреса"
+msgstr "Don't allow to login in personal cabinet with foreign IP-address"
+
+msgid "RADIUS разрешить переподключение(для повисших сессий)"
+msgstr "RADIUS allow reconnection(for unresponsive sessions)"
+
+msgid "Иначе только если стоит Переподключение в свойствах абонента или переподключение по таймауту"
+msgstr "Otherwise, only if there is a Reconnection in subscriber's properties, or reconnection on timeout"
+
+msgid "Разрывать сессию при переходе в отрицательный баланс"
+msgstr "Disconnects the session in the transition to a negative balance"
+
+msgid "Для NAS серверов с простой конфигурацией"
+msgstr "For NAS servers with a simple configuration"
+
+msgid "Авторизация по RADIUS только для RADIUS-пользователей"
+msgstr "Authorization for RADIUS only for RADIUS-users"
+
+msgid "Отвечать на RADIUS запросы только если у пользователя авторизация по радиусу"
+msgstr "Respond to RADIUS requests only if the user has authorization to RADIUS"
+
+msgid "Запретить подключение VPN RADIUS-пользователям с isNAT"
+msgstr "Disable connection VPN RADIUS-users with isNAT"
+
+msgid "Необходимо в редких случаях для обхода проблем маршрутизации белых адресов"
+msgstr "It is rarely necessary to bypass the white address routing problems"
+
+msgid "Обнулять таблицы кэш авторизаций при рестарте icsd oldlogik"
+msgstr "Reset authorizations cache table when restarting icsd oldlogik"
+
+msgid "Отображать Услуги у пользователя"
+msgstr "Display services at user"
+
+msgid "Отображать подписанные Услуги у пользователя в кабинете"
+msgstr "Display subscribed Services of user in cabinet"
+
+msgid "Отображать Аудит у пользователя"
+msgstr "Display Audit at user"
+
+msgid "Отображать все события изменения и события пользователя в кабинете"
+msgstr "Display all change events and user's events in cabinet"
+
+msgid "Флаг для перестройки  GLN_USR_TREE_UPDATE"
+msgstr "Flag for reconstruction GLN_USR_TREE_UPDATE"
+
+msgid "Показывать сокращенную информацию о балансе"
+msgstr "Display abridged balance information"
+
+msgid "Показывать только текущий баланс"
+msgstr "Display only current balance"
+
+msgid "Пул адресов для абонентов с превышенным лимитом"
+msgstr "Pool of addresses for subscribers with exceeding limit"
+
+msgid "Позволяет на NAS сервере сделать DNAT на страницу с переадресацией"
+msgstr "Allows NAS server to do DNAT on page with redirection"
+
+#, fuzzy
+msgid "Использовать системную дату при создании операций"
+msgstr "Use system date when creating operations"
+
+msgid "Также запрещает редактирование даты операции"
+msgstr "Also prohibits editing operation date"
+
+msgid "Курс валюты учеты для входящих документов"
+msgstr "Exchange rate for incoming documents"
+
+msgid "например 27.5 рублей за доллар, указать 27.5"
+msgstr "eg 27.5 rubles per dollar, specify 27.5"
+
+msgid "руб"
+msgstr "rub"
+
+msgid "Название денег страны"
+msgstr "Name of money of the country"
+
+msgid "Отображать суммы в Личном кабинете в деньгах страны"
+msgstr "Display amounts in Personal cabinet in the country's money"
+
+msgid "Отображать суммы в менеджере в деньгах страны(недоступно)"
+msgstr "Display amounts in Personal cabinet in the country's money(not available)"
+
+msgid "Пересчитывать недостачу средств при смене тарифа"
+msgstr "Recalculate shortage of funds when changing tariff"
+
+msgid "Время сбора NetFlow после отключения пользователя"
+msgstr "Time of NetFlow gathering after user disconnection"
+
+msgid "Рекомендуется 0-600"
+msgstr "Recommended 0-600"
+
+msgid "Таймаут accounting update"
+msgstr "Timeout of accounting update"
+
+msgid "Пользователь будет отключен, если NAS не посылает"
+msgstr "User will be disconnected if the NAS does not send"
+
+msgid "Регистрозависимый логин"
+msgstr "Case-sensitive login"
+
+msgid "Рекомендуется для работы с NAS серверами"
+msgstr "Recommended for use with DNS servers"
+
+msgid "Вход по ip в личный кабинет, без логина и пароля"
+msgstr "Log in by ip in personal cabinet, without login and password"
+
+msgid "Используйте только, если обеспечили защиту от подстановки"
+msgstr "Use only if provided protection against substitution"
+
+msgid "Запретить менять пароль в личном кабинете"
+msgstr "Disable changing the password in the profile"
+
+msgid "Тихий час начиначется с"
+msgstr "Quiet time starts at"
+
+msgid "Сообщения"
+msgstr "Messages"
+
+msgid "Тихий час заканчивается в"
+msgstr "Quiet time ends at"
+
+msgid "Предупреждать об окончании баланса за n дней"
+msgstr "Warn about balance's ending for n days"
+
+msgid "Количество попыток отправки при неудаче"
+msgstr "Number of attempts to send on failure"
+
+#, fuzzy
+msgid "Письмо от вашего провайдера"
+msgstr "Not recommended to providers"
+
+msgid "Заголовок писем"
+msgstr "Header of letters"
+
+msgid "Post параметры СМС шлюза"
+msgstr "Post parameters of SMS gateway"
+
+msgid "Группа для заявок (не более 100 пользователей)"
+msgstr "Group for requests (no more than 100 users)"
+
+msgid "Заявки"
+msgstr "Requests"
+
+msgid "Отображать Help Desk у пользователя"
+msgstr "Display Help Desk at user"
+
+msgid "Отображать Help Desk в кабинете"
+msgstr "Display Help Desk in cabinet"
+
+msgid "1-Списывать абонентскую плату за каждый день последовательно/0-Списывать только за последний день"
+msgstr "1-To write off a monthly fee for each day consistently/0-Write off only in last day"
+
+#, fuzzy
+msgid "Группа для рассылки уведомлений HELPDESK"
+msgstr "Group for sending notifications HELPDESK"
+
+msgid "Показывать экран welcome"
+msgstr "Display welcome screen"
+
+msgid "Префикс для договоров"
+msgstr "Prefix for contracts"
+
+msgid "Нужно перестроить дерево абонентов"
+msgstr "Need to rebuild tree of subscribers"
+
+msgid "Число месяца выставления счетов на предоплату"
+msgstr "Number of month of issuing bills for prepay"
+
+msgid "Длина локального номера"
+msgstr "Length of local numbers"
+
+msgid "Телефония"
+msgstr "Telephony"
+
+msgid "Расчет цифровой подписи md5"
+msgstr "Calculation digital signature md5"
+
+msgid "Число месяца до которого не проверять превышение баланса"
+msgstr "Number of month until which do not check exceeding the balance"
+
+msgid "Формировать акт на с датой предыдущего дня"
+msgstr "Formation of a prepay acts with date of previous day"
+
+msgid "Не отображать активацию карт оплаты в личном кабинете"
+msgstr "Do not display the activation of payment cards in your account"
+
+msgid "Нельзя менять пароль через личный кабинет"
+msgstr "It is impossible to change the password via personal cabinet"
+
+msgid "Разрешить смену MAC-адреса через ЛК"
+msgstr "Allow change the MAC-address via personal cabinet"
+
+msgid "Скрыть в фин. операциях услуги с 0 ценой"
+msgstr "Hide in financial operations with 0 cost service"
+
+msgid "Скрыть вкладку \"Тариф\" в ЛК"
+msgstr "Hide tab \"Tariff\" in personal cabinet"
+
+msgid "Скрыть вкладку \"Оплата\" в ЛК"
+msgstr "Hide tab \"Payment\" in personal cabinet"
+
+msgid "Скрыть ссылку \"Статистика посещений\" в ЛК"
+msgstr "Hide reference \"visitor statistics\" in personal cabinet"
+
+msgid "Автоматически обновлять страницу при окончании обработки абонента"
+msgstr "Automatically update page when subscriber's processing is over"
+
+msgid "Включить vidimax в ЛК"
+msgstr "Enable vidimax in personal cabinet"
+
+#, fuzzy
+msgid "Включить конструктор абонента"
+msgstr "Enable tariff wizard"
+
+msgid "Включить конструктор тарифа"
+msgstr "Enable tariff wizard"
+
+msgid "Включить статистику VOIP в ЛК"
+msgstr "Enable VOIP statistic in personal cabinet"
+
+msgid "Показывать только актуальные для периода акты и счета"
+msgstr "Display only relevant for periods of acts and bills"
+
+#, fuzzy
+msgid "Длина номера договора"
+msgstr "New contract number"
+
+msgid "Отображать дату договора в дереве абонентов"
+msgstr "Display date of the agreement in subscribers' tree"
+
+msgid "Запретить удалять группы если в них есть абоненты"
+msgstr "Disable delete groups if there are subscribers"
+
+msgid "Не предлагать тарифы в ЛК, если не указана линейка услуг"
+msgstr "Do not offer tarrifs in personal cabinet, if line services isn't specified"
+
+msgid "Префикс для логинов"
+msgstr "Prefix for login"
+
+msgid "Продолжительность обещанного платежа"
+msgstr "Duration of promised payment"
+
+msgid "Телефонный код города"
+msgstr "Telephone city code"
+
+msgid "Длина городского номера"
+msgstr "Length of city number"
+
+#, fuzzy
+msgid "Формировать нулевые счета"
+msgstr "Formation of zero cost bills"
+
+#, fuzzy
+msgid "Отображать номер договора вместо ФИО в дереве абонентов"
+msgstr "Display date of the agreement in subscribers' tree"
+
+msgid "Создавать контрольную сумму для номера договора"
+msgstr "Create checksum for the contract's number"
+
+msgid "Сортировать абонентов в дереве по алфавиту"
+msgstr "Sort subscribers in tree alphabetically"
+
+#, fuzzy
+msgid "Не сторнировать услугу при удалении"
+msgstr "Unload telephony service"
+
+msgid "Отображать детальную статистику в мегабайтах"
+msgstr "Display detailed statistics in megabytes"
+
+msgid "Разрешить интернет всем абонентам, независимо от баланса"
+msgstr "Allow internet to all subscribers, regardless of balance"
+
+msgid "Универсальный пароль для ЛК"
+msgstr "Universal password for personal cabinet"
+
+msgid "Формирование счетов на предоплату (автоматическое) только на следующий месяц"
+msgstr "Formation of a prepay bills (automatic) only for next month"
+
+msgid "При автоматическом формировании счетов на предоплату использовать данные только за следующий месяц"
+msgstr "For automatic formation of a prepay bills use data only for next month"
+
+msgid "Разбор адреса при создании абонента через регулярные выражения"
+msgstr "Parse address when creating a subscriber using a regular expressions"
+
+msgid "Показывать абонентов онлайн в дереве абонентов"
+msgstr "Display online subscribers in subscribers' tree"
+
+msgid "Запретить редактировать Carbon XGE local(id=0)"
+msgstr "Disable editing Carbon XGE local(id=0)"
+
+msgid "Показывать старые задачи CRM"
+msgstr "Display old tasks in CRM"
+
+msgid "Диагностика"
+msgstr "Diagnostics"
+
+#, fuzzy
+msgid "Диагностика(XGE)"
+msgstr "Diagnostics"
+
+#, fuzzy
+msgid "Диагностика OSS"
+msgstr "Diagnostics"
+
+#, python-format
+msgid "Уважаемый Абонент! На вашем лицевом счете по договору %(contract_number)s осталось %(balance)s %(currecy)s При отсутствии средств на счете обслуживание будет приостановлено. С уважением, служба по работе с клиентами."
+msgstr ""
+
+#, python-format
+msgid "Занесено в аудит:%(text)s"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Уважаемый Абонент! %(text)s С уважением, служба по работе с клиентами."
+msgstr "Dear {0}. You have unread messages of support in requests : {1}"
+
+#, python-format
+msgid "Уважаемый Абонент! На ваш лицевой счет по договору %(contract_number)s зачислено %(text)s. В настоящее время на вашем счете %(balance)s %(currecy)s. С уважением, служба по работе с клиентами."
+msgstr ""
+
+#, python-format
+msgid "Уважаемый Абонент! На основании договора %(contract_number)s отправляем вам счет для оплаты предоставляемых услуг. С уважением, служба по работе с клиентами."
+msgstr ""
+
+#, python-format
+msgid "Уважаемый Абонент! Обслуживание по договору %(contract_number)s приостановлено из-за отсутствия средств на вашем лицевом счете. Для возобновления обслуживания внесите на счет не менее %(allow_limit)s. Способы моментального пополнения счета указаны на нашем сайте. С уважением, служба по работе с клиентами."
+msgstr ""
+
+#, python-format
+msgid "Уважаемый Абонент! Обслуживание по договору %(contract_number)s возобновлено. С уважением, служба по работе с клиентами."
+msgstr ""
+
+#, python-format
+msgid "Уважаемый Абонент! Уведомляем вас о подключении новой услуги \"%(text)s\". С уважением, служба по работе с клиентами."
+msgstr ""
+
+#, fuzzy
+msgid "Поступила заявка из HelpDesk"
+msgstr "Subscriber {0} answered on request in Helpdesk."
+
+#, fuzzy
+msgid "Поступила заявка из CRM"
+msgstr "Subsidiary request"
+
+#, fuzzy, python-format
+msgid "Уважаемый Абонент! Ваш пароль \"%(text)s\"."
+msgstr "The subscriber number can't be found %s"
+
+#, fuzzy
+msgid "Уважаемый Абонент! Служба технической поддержки ответила вам в вашей заявке."
+msgstr "Dear {0}. You have unread messages of support in requests : {1}"
+
+#, fuzzy, python-format
+msgid "Уважаемый Абонент! Ваш проверочный код: %(psw_token)s"
+msgstr "Hardware serial number"
+
+#, fuzzy
+msgid "При отрицательном балансе"
+msgstr "Don't authorize by RADIUS with a negative balance"
+
+#, fuzzy
+msgid "При положительном балансе"
+msgstr "--date of transition to positive balance"
+
+#, fuzzy
+msgid "Наша организация"
+msgstr "Initialization"
+
+msgid "Звонить по телефону 212-12-121"
+msgstr ""
+
+#, fuzzy
+msgid "Операторы связи"
+msgstr "Operator"
+
+msgid "ООО Лучший провайдер"
+msgstr ""
+
+msgid "Служебная группа"
+msgstr "Office group"
+
+#, fuzzy
+msgid "Возможность читать Abonents"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Abonents"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Abonents"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Abonents"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Abonentsblock"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Abonentsblock"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Abonentsblock"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Abonentsblock"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Abonentsspeed"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Abonentsspeed"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Abonentsspeed"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Abonentsspeed"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Archaccountstack"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Archaccountstack"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Archaccountstack"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Archaccountstack"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Trafcounters"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Trafcounters"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Trafcounters"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Trafcounters"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Eventsstack"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Eventsstack"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Eventsstack"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Eventsstack"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Attributevalues"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Attributevalues"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Attributevalues"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Attributevalues"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Accountstack"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Accountstack"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Accountstack"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Accountstack"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Crmtask"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Crmtask"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Crmtask"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Crmtask"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Crmtaskhistory"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Crmtaskhistory"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Crmtaskhistory"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Crmtaskhistory"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Hdsk"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Hdsk"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Hdsk"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Hdsk"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Msgstack"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Msgstack"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Msgstack"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Msgstack"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Financeoperations"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Financeoperations"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Financeoperations"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Financeoperations"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Usersusluga"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Usersusluga"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Usersusluga"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Usersusluga"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Users"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Users"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Users"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Users"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Nas"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Nas"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Nas"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Nas"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Collector"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Collector"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Collector"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Collector"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Iptv"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Iptv"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Iptv"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Iptv"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Equipment"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Equipment"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Equipment"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Equipment"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Voip"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Voip"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Voip"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Voip"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Switch"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Switch"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Switch"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Switch"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Switchports"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Switchports"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Switchports"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Switchports"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Ippull"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Ippull"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Ippull"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Ippull"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Adminusersprofile"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Adminusersprofile"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Adminusersprofile"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Adminusersprofile"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Homes"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Homes"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Homes"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Homes"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Vlanpull"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Vlanpull"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Vlanpull"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Vlanpull"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Admindocs"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Admindocs"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Admindocs"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Admindocs"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Adminaccounts"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Adminaccounts"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Adminaccounts"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Adminaccounts"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Billstack"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Billstack"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Billstack"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Billstack"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Userattributes"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Userattributes"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Userattributes"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Userattributes"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Currency"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Currency"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Currency"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Currency"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Currencyrate"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Currencyrate"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Currencyrate"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Currencyrate"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Weekends"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Weekends"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Weekends"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Weekends"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Vpnconst"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Vpnconst"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Vpnconst"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Vpnconst"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Adminmsg"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Adminmsg"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Adminmsg"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Adminmsg"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Printforms"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Printforms"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Printforms"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Printforms"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Tarif"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Tarif"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Tarif"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Tarif"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Tarifradiusparams"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Tarifradiusparams"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Tarifradiusparams"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Tarifradiusparams"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Tarifusersuslugaallow"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Tarifusersuslugaallow"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Tarifusersuslugaallow"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Tarifusersuslugaallow"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Tarifusersusluga"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Tarifusersusluga"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Tarifusersusluga"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Tarifusersusluga"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Usluga"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Usluga"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Usluga"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Usluga"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Voipusluga"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Voipusluga"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Voipusluga"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Voipusluga"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Uslugavoip"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Uslugavoip"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Uslugavoip"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Uslugavoip"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Tarifruleset"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Tarifruleset"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Tarifruleset"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Tarifruleset"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Tarifrule"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Tarifrule"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Tarifrule"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Tarifrule"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Voipcategory"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Voipcategory"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Voipcategory"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Voipcategory"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Voipdirection"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Voipdirection"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Voipdirection"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Voipdirection"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Cardseries"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Cardseries"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Cardseries"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Cardseries"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Cards"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Cards"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Cards"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Cards"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Admincustomreports"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Admincustomreports"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Admincustomreports"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Admincustomreports"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #1"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #2"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #86"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #87"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #88"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #89"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #90"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #109"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #110"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #111"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #101"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #104"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #105"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #301"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #302"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #303"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Возможность читать HomeTypeName"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять HomeTypeName"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять HomeTypeName"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять HomeTypeName"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Доступ к группе абонентов #244"
+msgstr "Port to connect subscribers"
+
+#, fuzzy
+msgid "Возможность читать Status"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Status"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Status"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Status"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Objectsstatus"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Objectsstatus"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Objectsstatus"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Objectsstatus"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Statusfollow"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Statusfollow"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Statusfollow"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Statusfollow"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать Objectssubstatus"
+msgstr "Ability to read %s"
+
+#, fuzzy
+msgid "Возможность изменять Objectssubstatus"
+msgstr "Ability to change %s"
+
+#, fuzzy
+msgid "Возможность добавлять Objectssubstatus"
+msgstr "Ability to add %s"
+
+#, fuzzy
+msgid "Возможность удалять Objectssubstatus"
+msgstr "Ability to delete %s"
+
+#, fuzzy
+msgid "Возможность читать BillingSettings"
+msgstr "Ability to read %s"
+
+msgid "На координацию"
+msgstr "On coordination"
+
+msgid "В подключении"
+msgstr "In connection"
+
+msgid "Возврат"
+msgstr "Return"
+
+msgid "На координацию 1"
+msgstr "On coordination 1"
+
+msgid "На удержании"
+msgstr "On hold"
+
+msgid "На координацию 2"
+msgstr "On coordination 2"
+
+msgid "На координацию 3"
+msgstr "On coordination 3"
+
+msgid "В ожидании"
+msgstr "Pending"
+
+#, fuzzy
+msgid "Новый"
+msgstr "New"
+
+msgid "Помощь сервиса"
+msgstr "Help service"
+
+msgid "Обслуживание"
+msgstr "Service"
+
+msgid "Приостановлен по инициативе клиента"
+msgstr "Paused by the client's initiative"
+
+msgid "Возврат в СТС"
+msgstr "Return to the CTC"
+
+msgid "Возврат в ОП"
+msgstr "Return to OP"
+
+msgid "Принят в обслуживание"
+msgstr "Accepted into service"
+
+msgid "Подключен частично"
+msgstr "Partially connected"
+
+msgid "Интернет"
+msgstr "Internet"
+
+msgid "IP телевидение"
+msgstr "IP TV"
+
+msgid "IP телефония"
+msgstr "IP telephony"
+
+msgid "В обслуживании"
+msgstr "In service"
+
+msgid "Отказ"
+msgstr "Refusal"
+
+#, fuzzy
+msgid "Карточка абонента"
+msgstr "Print subscriber cards"
+
+msgid "Договор"
+msgstr "Agreement"
+
+msgid "Карты оплаты"
+msgstr "Payment cards"
+
+#, fuzzy
+msgid "Заявка HelpDesk"
+msgstr "Request"
+
+msgid "ПКО-1"
+msgstr ""
+
+#, fuzzy
+msgid "Счет на предоплату"
+msgstr "Bill for prepay was exhibited"
+
+#, fuzzy
+msgid "Строение"
+msgstr "Reduction"
+
+#, fuzzy
+msgid "Физ. лицо"
+msgstr "legal entity"
+
+#, fuzzy
+msgid "Миграция абонентов"
+msgstr "isn't read by the subscriber"
+
+#, fuzzy
+msgid "Синхронизация приходов"
+msgstr "Synchronised with 1C"
+
+#, fuzzy
+msgid "Проверка балансов"
+msgstr "Calculate balance"
+
+#, fuzzy
+msgid "Синхронизация балансов"
+msgstr "Synchronised with 1C"
+
+#, fuzzy
+msgid "ЦОК"
+msgstr "OK"
+
+#, fuzzy
+msgid "Техподдержка"
+msgstr "Dispatch method"
+
+#, fuzzy
+msgid "Бухгалтерия"
+msgstr "Category"
+
+#, fuzzy
+msgid "Техсервис"
+msgstr "Service type"
+
+#, fuzzy
+msgid "Руководство"
+msgstr "Amount"
+
+#, fuzzy
+msgid "ЦУС"
+msgstr "VAT%"
+
+#, fuzzy
+msgid "Произвольная пользовательская схема интеграции"
+msgstr "ID of session of user interface"
+
+#, fuzzy
+msgid "Пользовательская"
+msgstr "User"
+
+#, fuzzy
+msgid "Подключение Carbon XGE Router"
+msgstr "Connect"
+
+#, fuzzy
+msgid "Рекомендуемая схема для mikrotik 6."
+msgstr "Recommended 0-600"
+
+#, fuzzy
+msgid "Рекомендуется для mikrotik 5, тк simple на нем плохо работает."
+msgstr "Recommended for most providers"
+
+msgid "Выбирайте если знаете, что делаете"
+msgstr ""
+
+#, fuzzy
+msgid "Простейшая схема для hotspot"
+msgstr "Parameters"
+
+msgid "Отличная рекомендуемая схема для авторизации по первому пакету. Opt82 настраивается отдельно и независимо"
+msgstr ""
+
+#, fuzzy
+msgid "Рекомендуется, если у вас неуправляемые коммутаторы"
+msgstr "Recommended to add speed to tariff name"
+
+msgid "Сложная схема, устарела, не рекомендуется. Правильней использовать Redback-IPoE"
+msgstr ""
+
+#, fuzzy
+msgid "Используется при сложных агрегациях каналов"
+msgstr "Field for search of accessory of dst_chan to service on operator"
+
+msgid "АТС М200"
+msgstr ""
+
+msgid "Рекомендуемая схема для mikrotik 6 с одновременным использованием IPv4 и IPv6. Только для PPPoE авторизации."
+msgstr ""
+
+msgid "Схема с поднятием сессии по первому пакету, авторизация проходит на веб-странице биллинга"
+msgstr ""
+
+msgid "Схема с возможностью настройки разной скорости на разные подсети"
+msgstr ""
+
+msgid "Схема для авторизации PPPoE на Cisco c модулем BNG"
+msgstr ""
+
+msgid "Схема для авторизации по первому пакету на Cisco c модулем BNG"
+msgstr ""
+
+msgid "Схема для статической авторизации по первому пакету на Cisco c модулем BNG"
+msgstr ""
+
+msgid "Схема для интеграции с Flussonic Watcher"
+msgstr ""
+
+#, fuzzy
+msgid "Пользовательская интеграция с неоператорскими услугами"
+msgstr "The user has requested the removal of the of a voluntary lock"
+
+#, fuzzy
+msgid "Интеграция с порталом Wialon"
+msgstr "Integration with 1C"
+
+#, fuzzy
+msgid "Схема для интеграции с WCS"
+msgstr "Configuration file"
+
+msgid "Разово"
+msgstr "Single-time"
+
+msgid "Ежечасно"
+msgstr "Hourly"
+
+msgid "Ежедневно"
+msgstr "Daily"
+
+msgid "Ежемесячно"
+msgstr "Monthly"
+
+msgid "Ежемесячно равными долями в день"
+msgstr "Equal shares monthly per day"
+
+#, fuzzy
+msgid "Ежегодно"
+msgstr "Daily"
+
+msgid "дн."
+msgstr "d."
+
+msgid "Дни"
+msgstr "Days"
+
+msgid "мб."
+msgstr "MB"
+
+msgid "Мегабайты"
+msgstr "Megabytes"
+
+msgid "мин."
+msgstr "min."
+
+msgid "Минуты"
+msgstr "Minutes"
+
+msgid "час."
+msgstr "h."
+
+msgid "Часы"
+msgstr "Hours"
+
+msgid "шт."
+msgstr "p."
+
+msgid "Штуки"
+msgstr "Pieces"
+
+msgid "Стандартный"
+msgstr "Standard"
+
+#, fuzzy
+msgid "Входящий"
+msgstr "Incoming ID"
+
+#, fuzzy
+msgid "Исходящий"
+msgstr "Incoming ID"
+
+#, fuzzy
+msgid "Транзит"
+msgstr "Credit"
+
+#, fuzzy
+msgid "Открыто"
+msgstr "Closed"
+
+#, fuzzy
+msgid "Закрыто"
+msgstr "Closed"
+
+msgid "Галочка"
+msgstr "Check mark"
+
+msgid "Список"
+msgstr "List"
+
+msgid "Модель"
+msgstr "Model"
+
+msgid "Время"
+msgstr "Time"
+
+#, fuzzy
+msgid "Файл"
+msgstr "Files"
+
+#, fuzzy
+msgid "стоимость 0"
+msgstr "Cost"
+
+msgid "Локальная сеть"
+msgstr "Local network"
+
+#, fuzzy
+msgid "платная сеть"
+msgstr "Local network"
+
+#, fuzzy
+msgid "Внешний трафик"
+msgstr "Internet traffic"
+
+msgid "Внутригород"
+msgstr "Intercity"
+
+msgid "Пример правила до сайта carbonsoft.ru"
+msgstr ""
+
+msgid "Льготные сайты"
+msgstr "Preferential sites"
+
+#, fuzzy
+msgid "Абонентская плата за добровольную блокировку"
+msgstr "The planned voluntary lock"
+
+#, fuzzy
+msgid "Комиссия за обещанный платёж"
+msgstr "Commission for the promised payment"
+
+#, fuzzy
+msgid "Обещанный платеж (системный)"
+msgstr "Promised payment"
+
+#, fuzzy
+msgid "Стоимость смены тарифа"
+msgstr "request for tariff change"
+
+msgid "Не определено"
+msgstr "Undefined"
+
+#, fuzzy
+msgid "Основной тариф"
+msgstr "Any tariff"
+
+msgid "Тариф пример 1Мб=1У.Е."
+msgstr ""
+
+#, fuzzy
+msgid "Позвонить"
+msgstr "update"
+
+#, fuzzy
+msgid "Подключить"
+msgstr "Connect"
+
+#, fuzzy
+msgid "Настроить"
+msgstr "Settings"
+
+#, fuzzy
+msgid "Отключить"
+msgstr "Disable isNat"
+
+#, fuzzy
+msgid "Редактирование пулов IP адресов"
+msgstr "Edit INI files"
+
+#, fuzzy
+msgid "Редактирование Firewall"
+msgstr "Edit balance"
+
+#, fuzzy
+msgid "Изменение печатной формы"
+msgstr "Templates of printing forms"
+
+#, fuzzy
+msgid "Редактирование карт оплаты"
+msgstr "Editing a subscriber"
+
+#, fuzzy
+msgid "Запуск/Остановка сервера"
+msgstr "Run commands"
+
+#, fuzzy
+msgid "Редактирование т.планов"
+msgstr "Edit balance"
+
+#, fuzzy
+msgid "Редактирование пользователей"
+msgstr "Unblock users"
+
+#, fuzzy
+msgid "Вход/Выход"
+msgstr "Weekend"
+
+#, fuzzy
+msgid "Системные события"
+msgstr "Event date"
+
+msgid "Телефон"
+msgstr "Phone"
+
+msgid "ИНН"
+msgstr ""
+
+#, fuzzy
+msgid "КПП"
+msgstr "Code"
+
+msgid "р/c"
+msgstr ""
+
+#, fuzzy
+msgid "Банк"
+msgstr "Block"
+
+#, fuzzy
+msgid "БИК"
+msgstr "OK"
+
+#, fuzzy
+msgid "Телефон №2"
+msgstr "Phone"
+
+#, fuzzy
+msgid "Главный бухгалтер"
+msgstr "Main subscriber"
+
+msgid "к/c"
+msgstr ""
+
+msgid "Паспорт №"
+msgstr "Passport №"
+
+msgid "Паспорт серия"
+msgstr "Passport serial number"
+
+#, fuzzy
+msgid "Паспорт регистрация"
+msgstr "Passport serial number"
+
+#, fuzzy
+msgid "Паспорт кем выдан"
+msgstr "Passport data"
+
+#, fuzzy
+msgid "Паспорт когда выдан"
+msgstr "When issued"
+
+#, fuzzy
+msgid "Должность"
+msgstr "Loyalty"
+
+#, fuzzy
+msgid "Президент, Премьер"
+msgstr "Owned by the operator"
+
+#, fuzzy
+msgid "Дата рождения"
+msgstr "Date of creation"
+
+#, fuzzy
+msgid "Лицензии"
+msgstr "Description"
+
+#, fuzzy
+msgid "На операторскую деятельность"
+msgstr "Can not find a unique match."
+
+msgid "ФИО"
+msgstr ""
+
+msgid "Фамилия Имя Отчетство полностью"
+msgstr ""
+
+#, fuzzy
+msgid "Юридический адрес"
+msgstr "Dynamic IP addresses"
+
+#, fuzzy
+msgid "Физический адрес"
+msgstr "Dynamic IP addresses"
+
+#, fuzzy
+msgid "Почтовый адрес"
+msgstr "Postcode"
+
+#, fuzzy
+msgid "Факс"
+msgstr "Text"
+
+#, fuzzy
+msgid "В лице"
+msgstr "Street"
+
+msgid "ОГРН"
+msgstr ""
+
+#, fuzzy
+msgid "Контактное лицо"
+msgstr "individual persons"
+
+#, fuzzy
+msgid "Место рождения"
+msgstr "Message text"
+
+msgid "Заявка на подключение"
+msgstr "Request for connection"
+
+#, fuzzy
+msgid "Исх.звонок"
+msgstr "Calls log"
+
+msgid "Исх.письмо"
+msgstr ""
+
+#, fuzzy
+msgid "Предложение"
+msgstr "Management"
+
+msgid "Турбокнопка"
+msgstr "Turbo button"
+
+#, fuzzy
+msgid "Бонусный трафик"
+msgstr "Incoming traffic"
+
+msgid "Форсаж"
+msgstr "Speed boost"
+
+msgid "Подписка"
+msgstr "Subscription"
+
+msgid "Пакет МБ"
+msgstr "Package MB"
+
+msgid "Абонентская плата"
+msgstr "Subscription fee"
+
+msgid "Трафик"
+msgstr "Traffic"
+
+msgid "Скидка\\Наценка"
+msgstr "Discount\\markup"
+
+msgid "Обещанный платеж"
+msgstr "Promised payment"
+
+msgid "Системный"
+msgstr "Systematic"
 
 msgid "Ваша заявка успешна добавлена, скоро с вами свяжутся."
 msgstr "Your request has been successfully added, soon we will contact with you"
@@ -3747,7 +6255,6 @@ msgstr "You can not transfer from the current tariff"
 msgid "{0} {1} на {2} из ЛК, запрещен переход на выбранный тариф"
 msgstr "{0} {1} to {2} from personal cabinet, forbidden transition to the selected tariff"
 
-#, fuzzy
 msgid "Переход на выбранный тариф запрещен"
 msgstr "Transfer to the selected tariff is prohibited"
 
@@ -4030,16 +6537,12 @@ msgstr "Request for change of MAC"
 msgid "Запрос на смену MAC отправлен"
 msgstr "Request for change of MAC sent"
 
-#, fuzzy
 msgid "Не удалось определить мак нового компьютера, обратитесь в тех. поддержку"
 msgstr "Unable detect mac, please contact technical support"
 
 #, python-format
 msgid "Не удалось подключить другой компьютер: %s"
 msgstr "Failed to connect to another computer: %s"
-
-msgid "Договор"
-msgstr "Agreement"
 
 msgid "Не удалось найти операцию с id {0} для абонента {1}"
 msgstr "Could not find operation with id {0} for subscriber {1}"
@@ -4056,11 +6559,9 @@ msgstr "The report is not available to perform or does not exist"
 msgid "Необходимо заполнить поля формы."
 msgstr "Please fill form fields"
 
-#, fuzzy
 msgid "Конвертирование баллов в количестве {0} из ЛК, ip: {1}"
 msgstr "Convert bonus score in amount of {0} from personal cabinet, ip: {1}"
 
-#, fuzzy
 msgid "Количество бонусных баллов должно быть положительным числом"
 msgstr "Amount of score have to be positive number"
 
@@ -4070,12 +6571,8 @@ msgstr "Amount of score don't have to surpass balance of score account// {0} > {
 msgid "Конвертирование баллов через ЛК"
 msgstr "Convert bonus score via personal cabinet"
 
-#, fuzzy
 msgid "Принят запрос на конвертирование баллов"
 msgstr "Request for convert bounus score has been accepted"
-
-msgid "Телефон"
-msgstr "Phone"
 
 msgid "Сетевой адрес"
 msgstr "Network address"
@@ -4090,11 +6587,9 @@ msgstr "Trying auth from web-interface. ip={0}"
 msgid "Абоненты HotSpot"
 msgstr "HotSpot subscribers"
 
-#, fuzzy
 msgid "Существует несколько каталогов Hotspot!"
 msgstr "Found multiple HotSpot folders"
 
-#, fuzzy
 msgid "Не найдена учетая запись с телефоном {0}."
 msgstr "Not found any account with phone number {0}."
 
@@ -4104,16 +6599,14 @@ msgstr "Found multiple accounts with your phone {0}."
 msgid "Не удается найти уникальное соответствие."
 msgstr "Can not find a unique match."
 
-#, fuzzy
 msgid "Абонент недоступен для авторизации: удален"
-msgstr "Subscriber is not available to authenticate"
+msgstr "Subscriber is not available to authenticate: deleted"
 
 msgid "HotSpot: Абонент запросил на номер {0} пароль к учетной записи {1} с IP адреса {2}"
 msgstr "HotSpot: Subscriber request to {0} account password {1} from IP address {2}"
 
-#, fuzzy
 msgid "HotSpot: Абонент с номера {0} запросил авторизацию по телефону, ip={2}, login={1}"
-msgstr "HotSpot: Subscriber do not pass web auth by phone number {0} from IP address {2}"
+msgstr "HotSpot: Subscriber from number {0} request to authenticate via phone number, ip={2}, login={1}"
 
 msgid "HotSpot: IP адрес {0} передан абоненту {1}"
 msgstr ""
@@ -4294,9 +6787,6 @@ msgstr "Terms and networks"
 msgid "Категории звонков"
 msgstr "Categories of calls"
 
-msgid "Карты оплаты"
-msgstr "Payment cards"
-
 msgid "Линейки услуг"
 msgstr "Lines of services"
 
@@ -4469,6 +6959,9 @@ msgstr "Reference"
 #, fuzzy
 msgid "Типы сенсоров"
 msgstr "Types of requests"
+
+msgid "Группы услуг VOIP"
+msgstr "Group of VOIP services"
 
 msgid "(Значения по умолчанию)"
 msgstr "(Default value)"
@@ -4658,17 +7151,8 @@ msgstr "before"
 msgid "Финансовые операции"
 msgstr "Financial operations"
 
-msgid "Сообщения"
-msgstr "Messages"
-
-msgid "Редактирование абонента"
-msgstr "Editing a subscriber"
-
 msgid "Услуги"
 msgstr "Services"
-
-msgid "Другое"
-msgstr "Another"
 
 msgid "Режим работы только чтение, regreadonly, обратитесь в отдел продаж www.carbonsoft.ru"
 msgstr "Mode: read only, regreadonly, please contact the sales department www.carbonsoft.ru"
@@ -4681,9 +7165,6 @@ msgstr "Help"
 
 msgid "Оператор"
 msgstr "Operator"
-
-msgid "Менеджер"
-msgstr "Manager"
 
 msgid "<a href=\"{help_link}\" target=\"_blank\">&#91;Узнать&nbsp;больше&hellip;&#93;</a>"
 msgstr "<a href=\"{help_link}\" target=\"_blank\">&#91;Learn&nbsp;more&hellip;&#93;</a>"
@@ -4748,18 +7229,6 @@ msgstr "Reversal"
 msgid "Заблокировать всех абонентов"
 msgstr "Block all users"
 
-#, fuzzy
-msgid "Юридический адрес"
-msgstr "Dynamic IP addresses"
-
-#, fuzzy
-msgid "Физический адрес"
-msgstr "Dynamic IP addresses"
-
-#, fuzzy
-msgid "Почтовый адрес"
-msgstr "Postcode"
-
 msgid "Номер SMS, номер VOIP, IP-адрес"
 msgstr "SMS number, VOIP number, IP-address"
 
@@ -4788,9 +7257,6 @@ msgstr "Search in subfolders"
 
 msgid "Новая дата активации"
 msgstr "The new date of activation"
-
-msgid "Все"
-msgstr "All"
 
 #, fuzzy
 msgid "Очистить историю блокировки услуг абонента"
@@ -4854,9 +7320,6 @@ msgstr "Error Number Validation: %s"
 
 msgid "Нет"
 msgstr "No"
-
-msgid "Обещанный платеж"
-msgstr "Promised payment"
 
 #, fuzzy
 msgid "Изменить пользователя"
@@ -4941,27 +7404,9 @@ msgstr "The model isn't specified!"
 msgid "Баланс"
 msgstr "Balance"
 
-msgid "Галочка"
-msgstr "Check mark"
-
-msgid "Список"
-msgstr "List"
-
-msgid "Модель"
-msgstr "Model"
-
-msgid "Время"
-msgstr "Time"
-
 #, fuzzy
 msgid "Найдены дубликаты:"
 msgstr "Identifier"
-
-msgid "Паспорт №"
-msgstr "Passport №"
-
-msgid "Паспорт серия"
-msgstr "Passport serial number"
 
 msgid "Кем выдан"
 msgstr "Issued by"
@@ -4993,6 +7438,9 @@ msgstr "Can't create subscriber in recycle bin"
 msgid "Объединение адресов"
 msgstr "Dynamic IP addresses"
 
+msgid "С какой даты"
+msgstr "From date"
+
 msgid "Разрешено чтение"
 msgstr "Allowed reading"
 
@@ -5008,8 +7456,8 @@ msgstr "Allowed to delete"
 msgid "Описание СМС шлюза Carbon"
 msgstr "Description of SMS gateway Carbon"
 
-msgid "<strong>{status} СМС-шлюз Carbon.</strong> Его использование бесплатно, но есть ограничение - 2000 смс в месяц."
-msgstr "<strong>{status} Carbon SMS gateway.</strong> It can be used for free, but there is a limit - 2000 messages per month."
+msgid "<strong>{status} СМС-шлюз Carbon.</strong> Его использование бесплатно, но есть ограничение - 2000 смс (всего) на 4 месяца. После этого потребуется подключить другой шлюз."
+msgstr "<strong>{status} Carbon SMS gateway.</strong> It can be used for free, but there is a limit - 2000 messages (total) for 4 month. After that, you will need to connect another gateway."
 
 msgid "Выключен"
 msgstr "Disabled"
@@ -5082,20 +7530,14 @@ msgstr "New password confirmation"
 msgid "Пароль не должен содержать символы пробела!"
 msgstr "The password mustn't contain any space characters!"
 
-msgid "Интернет"
-msgstr "Internet"
-
-msgid "Телефония"
-msgstr "Telephony"
-
 msgid "Телевидение"
 msgstr "TV"
 
+msgid "Выберите категорию VOIP"
+msgstr "Select VOIP category"
+
 msgid "Не указан коммутатор для записи порта"
 msgstr "Switch is not specified for record port"
-
-msgid "Предоплата"
-msgstr "Prepayment"
 
 #, fuzzy
 msgid "Необходимо указать тип услуги"
@@ -5170,6 +7612,12 @@ msgstr "Can't move subscriber, because he has status of the movement: %s"
 msgid "Нельзя создавать абонента в корзине"
 msgstr "Can't create subscriber in recycle bin"
 
+msgid "Действующих абонентов нельзя переключать на другие лицевые счета"
+msgstr "Existing subscribers cannot be switched to other personal accounts"
+
+msgid "Нельзя отменить опцию \"Главный абонент\", пока лицевой счет используется другими абонентами"
+msgstr "You cannot cancel the \"Main subscriber\" option while the personal account is used by other subscribers"
+
 msgid "Превышена лицензия. Обратитесь в техническую поддержку."
 msgstr "License exceeded. Contact technical support."
 
@@ -5187,6 +7635,9 @@ msgstr "All services are not active"
 
 msgid "Услуги частично активны"
 msgstr "Services partially active"
+
+msgid "Помещен в корзину"
+msgstr "Placed in recycle bin"
 
 msgid "Ленивый"
 msgstr "Lazy"
@@ -5209,9 +7660,6 @@ msgstr "Connected {0}"
 msgid "ID"
 msgstr ""
 
-msgid "ФИО"
-msgstr ""
-
 #, fuzzy
 msgid "IP-адреса"
 msgstr "IP address"
@@ -5223,9 +7671,6 @@ msgstr "Number"
 #, fuzzy
 msgid "Квартира"
 msgstr "Quarter"
-
-msgid "Помещен в корзину"
-msgstr "Placed in recycle bin"
 
 msgid "Пользователь {0} восстановил из корзины абонента ABONENT_ID={1}."
 msgstr "User {0} has restored from recycle bin the subscriber ABONENT_ID={1}."
@@ -5328,9 +7773,6 @@ msgstr "Audit:Manual"
 msgid "Настройки {0}"
 msgstr "Settings {0}"
 
-msgid "Служебная группа"
-msgstr "Office group"
-
 msgid "Использовано {0} из {1}"
 msgstr "Used {0} of {1}"
 
@@ -5365,10 +7807,6 @@ msgstr "It doesn't perform any operation!"
 
 msgid "Добавлена запись в таблицу {0} {1}"
 msgstr "Entry has added in the table {0} {1}"
-
-#, fuzzy
-msgid "Счет на предоплату"
-msgstr "Bill for prepay was exhibited"
 
 msgid "{0} № {1} от {2}"
 msgstr "{0} № {1} from {2}"
@@ -5457,7 +7895,16 @@ msgid "Диапазон пула пересекается с пулами {0}"
 msgstr ""
 
 msgid "{0} в {1} на {2}"
-msgstr "{0} in {1} on {2}"
+msgstr "{0} in {1} to {2}"
+
+msgid "{} в {} с {} на {} с ценой {}"
+msgstr "{} in {} from {} to {} with price {}"
+
+msgid "{} в {} с {} на {}"
+msgstr "{} in {} from {} to {}"
+
+msgid "{} в {} у {} на {}"
+msgstr "{} in {} of {} to {}"
 
 msgid "Не найден ни один шаблон для отправки, проверьте настройки"
 msgstr "Unable to find any template to send, check the settings"
@@ -5608,9 +8055,11 @@ msgstr "It is forbidden to add \"Promised payment\" with a negative amount"
 msgid "Необходимо установить менеджера"
 msgstr "You must to set the manager"
 
-#, fuzzy
 msgid "Транк {} уже задействован!"
-msgstr "{0} already blocked"
+msgstr "{0} already involved"
+
+msgid "Запрещено добавлять архивные услуги"
+msgstr "Add archived services is forbidden"
 
 msgid "Запрещено создавать новые системные услуги"
 msgstr "It is forbidden to create a new system services"
@@ -5664,6 +8113,9 @@ msgstr " SpeedIn={0} Kbit, Out={1} Kbit "
 msgid "Запрещено изменять услугу в тарифе, введённом в эксплуатацию"
 msgstr "It is forbidden to change a service in the tariff, that was placed in operation"
 
+msgid "Невозможно архивировать услугу пока существуют отложенные задачи с переходом на нее"
+msgstr "It is forbidden to archive a service while exists scheduled task that the switch to it"
+
 msgid "Вх. {0:.3f} {1} Исх. {2:.3f} {3}"
 msgstr "In. {0:.3f} {1} Out. {2:.3f} {3}"
 
@@ -5673,8 +8125,8 @@ msgstr "Sum: {0}"
 msgid " Стоимость услуги: {0:.2f} {1}"
 msgstr " Cost of services: {0:.2f} {1}"
 
-msgid "{name}:{type} ({summ:.2f} {currency} {msg}"
-msgstr "{name}:{type} ({summ:.2f} {currency} {msg}"
+msgid "{name}:{type} ({summ:.2f} {currency} {msg})"
+msgstr "{name}:{type} ({summ:.2f} {currency} {msg})"
 
 msgid "Нельзя удалять системные услуги"
 msgstr "You can't remove system services"
@@ -5708,6 +8160,12 @@ msgstr " active since {0}"
 
 msgid " (не задано время активности)"
 msgstr " (activity time is not set)"
+
+msgid "Услуга {} активируется согласно условиям активности"
+msgstr "Service {} is activated according to the conditions of activity"
+
+msgid "Услуга {} деактивируется согласно условию активности: {}"
+msgstr "Service {} is deactivated according to the conditions of activity: {}"
 
 msgid "VOIP: Перерасчет по оператору {operator_id} за период с {sdate} по {edate}"
 msgstr ""
@@ -5806,9 +8264,6 @@ msgstr "Financial"
 
 msgid "без NAT"
 msgstr "without NAT"
-
-msgid "Администратор"
-msgstr "Administrator"
 
 msgid "Искать"
 msgstr "Search"
@@ -6074,9 +8529,6 @@ msgstr "An error occurred by the address %(build_absolute_uri)s"
 msgid "Показать/скрыть отладочную информацию"
 msgstr "Show/hide debug information"
 
-msgid "Приход"
-msgstr "Incoming"
-
 msgid "Агентские счета"
 msgstr "Agent's bills"
 
@@ -6125,6 +8577,12 @@ msgstr "Date of call"
 msgid "Получить тариф"
 msgstr "To receive a tariff"
 
+msgid "Сообщение уже отправлено, его невозможно отредактировать"
+msgstr "The message already sent and cannot be edited"
+
+msgid "Изменение условий обслуживания"
+msgstr "Changes to the service"
+
 msgid "Зарезервировать"
 msgstr "Make a reservation"
 
@@ -6144,25 +8602,20 @@ msgstr "by"
 msgid "Мастер создания NAS: шаг %(step1)s из %(cnt)s"
 msgstr "NAS Wizard: step %(step1)s of %(cnt)s"
 
-#, fuzzy
 msgid "Предыдущая"
-msgstr "Previous quarter"
+msgstr "Previous"
 
-#, fuzzy
 msgid "Первая"
-msgstr "Service"
+msgstr "First"
 
-#, fuzzy
 msgid "Последняя"
-msgstr "Subnet"
+msgstr "Last"
 
-#, fuzzy
 msgid "Следующая"
-msgstr "Next pool"
+msgstr "Next"
 
-#, fuzzy
 msgid "Записей на странице"
-msgstr "Number of lines per page"
+msgstr "Entries per page"
 
 msgid "Распечатать"
 msgstr "Print"
@@ -6182,14 +8635,14 @@ msgstr "Print"
 msgid "Ничего не найдено"
 msgstr "Nothing found"
 
+msgid "В архиве!"
+msgstr "In archive!"
+
 msgid "Скачать вывод"
 msgstr "Download the output"
 
 msgid "Финансовая информация"
 msgstr "Finance information"
-
-msgid "Заявки"
-msgstr "Requests"
 
 msgid "Основные"
 msgstr "Main"
@@ -6230,13 +8683,11 @@ msgstr "Value"
 msgid "Добавить"
 msgstr "Add"
 
-#, fuzzy
 msgid "Обновление..."
-msgstr "Direction"
+msgstr "Updating..."
 
-#, fuzzy
 msgid "Обновить по ИНН"
-msgstr "Update list"
+msgstr "Update via INN (RU TIN)"
 
 msgid "Найти"
 msgstr "Find"
@@ -6395,6 +8846,9 @@ msgstr "Comments"
 msgid "Фильтр"
 msgstr "Filter"
 
+msgid "Скрыть нулевые строки"
+msgstr "Hide zero lines"
+
 msgid "Отфильтровать"
 msgstr "To filter"
 
@@ -6403,9 +8857,6 @@ msgstr "Total"
 
 msgid "Поиск"
 msgstr "Search"
-
-msgid "Заблокирован"
-msgstr "Blocked"
 
 msgid "Удален"
 msgstr "Deleted"
@@ -6919,9 +9370,6 @@ msgstr "Remove subscribers from the recycle bin"
 msgid "Ошибка, не найден ip!"
 msgstr "Error, ip was not found!"
 
-msgid "Диагностика"
-msgstr "Diagnostics"
-
 msgid "Привязка к абоненту"
 msgstr "Binding to subscriber"
 
@@ -7004,6 +9452,14 @@ msgstr "Unload to DBF"
 msgid "Выгрузить Excel(xslx)"
 msgstr "Unload to Excel(xslx)"
 
+#, fuzzy
+msgid "Модель {} не найдена"
+msgstr "The subscriber is not found! ({0})"
+
+#, fuzzy
+msgid "Поле {} не найдено в модели {}"
+msgstr "Field {0} was not found in model!"
+
 msgid "Формат отображения"
 msgstr "Display format"
 
@@ -7025,21 +9481,20 @@ msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1
 msgid "<a href=\"/static/admin/1c/carbonsoft1c82.epf\" download>Обработка для 1С 8.2 Бухгалтерия ред. 2.0</a>"
 msgstr "<a href=\"/static/admin/1c/carbonsoft1c82.epf\" download>Processing for 1C 8.2 Accounting ed. 2.0</a>"
 
-#, fuzzy
 msgid "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Обработка для 1С 8.3.5 и ниже, Бухгалтерия ред. 3.0</a>"
-msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1C 8.0 Accounting ed. 2.0</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_3.epf\" download>Processing for 1С 8.3.5 and lower, Accounting ed. 3.0</a>"
 
-#, fuzzy
 msgid "<a href=\"/static/admin/1c/carbonsoft1c83_6_3.epf\" download>Обработка для 1С 8.3.6, Бухгалтерия ред. 3.0</a>"
-msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1C 8.0 Accounting ed. 2.0</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_6_3.epf\" download>Processing for 1С 8.3.6, Accounting ed. 3.0</a>"
 
-#, fuzzy
 msgid "<a href=\"/static/admin/1c/carbonsoft1c83_10_2.epf\" download>Обработка для 1С 8.3.10, Бухгалтерия ред. 3.0</a>"
-msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1C 8.0 Accounting ed. 2.0</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_10_2.epf\" download>Processing for 1С 8.3.10, Accounting ed. 3.0</a>"
 
-#, fuzzy
 msgid "<a href=\"/static/admin/1c/carbonsoft1c83_13_16.epf\" download>Обработка для 1С 8.3.13.1644, Бухгалтерия ред. 3.0 (3.0.67.63)</a>"
-msgstr "<a href=\"/static/admin/1c/carbonsoft1c8.epf\" download>Processing for 1C 8.0 Accounting ed. 2.0</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_13_16.epf\" download>Processing for 1С 8.3.13.1644, Accounting ed. 3.0 (3.0.67.63)</a>"
+
+msgid "<a href=\"/static/admin/1c/carbonsoft1c83_0542.epf\" download>Обработка для 1С 8.3, Бухгалтерия Предприятия, для биллинга 5.42+</a>"
+msgstr "<a href=\"/static/admin/1c/carbonsoft1c83_0542.epf\" download>Processing for 1C 8.3, Бухгалтерия Предприятия, for billing system version 5.42+</a>"
 
 msgid "Интеграция 1С"
 msgstr "Integration with 1C"
@@ -7056,9 +9511,8 @@ msgstr "Search in text fields"
 msgid "не прочитан абонентом"
 msgstr "isn't read by the subscriber"
 
-#, fuzzy
 msgid "Активность"
-msgstr "Cost"
+msgstr "Activity"
 
 msgid "Введите данные заявки на подключение"
 msgstr "Enter data request for connection"
@@ -7072,26 +9526,20 @@ msgstr "Subscriber account"
 msgid "Завершение создания заявки на подключение"
 msgstr "Completion of requests for connection"
 
-msgid "Заявка на подключение"
-msgstr "Request for connection"
-
 msgid "Подключение нового абонента"
 msgstr "Connect the new subscriber"
 
-#, fuzzy
 msgid "Россия"
-msgstr "Session"
+msgstr "Russia"
 
-#, fuzzy
-msgid "Адреса"
-msgstr "Destination"
-
-#, fuzzy
 msgid ""
 "Ошибка создания дома:\n"
 "\n"
 "{0}"
-msgstr "Error saving:"
+msgstr ""
+"Address creation error:\n"
+"\n"
+"{0}"
 
 msgid "Доступ запрещен"
 msgstr "Access denied"
@@ -7117,9 +9565,9 @@ msgstr "User {0} removed the permissions of the group {1} to group of subscriber
 msgid "Пользователь {0} добавил право доступа группы {1} к группе абонентов {2}"
 msgstr "User {0} has added the permission of the group {1} to group of subscribers {2}"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Зарезервировано %s номеров"
-msgstr "Reserved {0}/{1}"
+msgstr "Reserved %s numbers"
 
 msgid "Не удалось зарезервировать номера"
 msgstr "Failed to reserve a room"
@@ -7214,9 +9662,8 @@ msgstr "Without filter"
 msgid "Не задана дата активности"
 msgstr "Date of activity isn't set"
 
-#, fuzzy
 msgid "Направления/Тарифы"
-msgstr "Directions"
+msgstr "Directions/Tariffs"
 
 #, fuzzy
 msgid "Географические коды"
@@ -7228,13 +9675,6 @@ msgstr "{0} on {1}"
 
 msgid "Дополнительно"
 msgstr "Additionally"
-
-#, fuzzy
-#~ msgid "Скрыть нулевые строки"
-#~ msgstr "Network settings"
-
-#~ msgid "Входящий трафик"
-#~ msgstr "Incoming traffic"
 
 #~ msgid "Исходящий трафик"
 #~ msgstr "Outgoing traffic"
@@ -7307,9 +9747,6 @@ msgstr "Additionally"
 #~ msgid "Статус задачи"
 #~ msgstr "Task status"
 
-#~ msgid "Сообщение об ошибке"
-#~ msgstr "Error message"
-
 #~ msgid " <i>не прочитан абонентом</i>"
 #~ msgstr " <i>isn't read by the subscriber</i>"
 
@@ -7344,9 +9781,6 @@ msgstr "Additionally"
 #~ "        </div>\n"
 #~ "    "
 
-#~ msgid "Главный абонент"
-#~ msgstr "Main subscriber"
-
 #~ msgid " №"
 #~ msgstr " №"
 
@@ -7362,9 +9796,6 @@ msgstr "Additionally"
 
 #~ msgid "Переопределяет плату за тариф"
 #~ msgstr "Overrides fee for tariff"
-
-#~ msgid "Абонентская плата"
-#~ msgstr "Subscription fee"
 
 #, fuzzy
 #~ msgid "Анонимная заявка с сайта"
@@ -7428,30 +9859,6 @@ msgstr "Additionally"
 #~ msgid "Введите условия поиска!"
 #~ msgstr "Enter your search terms!"
 
-#~ msgid "Стандартный"
-#~ msgstr "Standard"
-
-#~ msgid "Турбокнопка"
-#~ msgstr "Turbo button"
-
-#~ msgid "Подписка"
-#~ msgstr "Subscription"
-
-#~ msgid "Форсаж"
-#~ msgstr "Speed boost"
-
-#~ msgid "IP телефония"
-#~ msgstr "IP telephony"
-
-#~ msgid "Пакет МБ"
-#~ msgstr "Package MB"
-
-#~ msgid "IP телевидение"
-#~ msgstr "IP TV"
-
-#~ msgid "Ижком"
-#~ msgstr "Izhcom"
-
 #~ msgid "Авторизация vpn pptp, pppoe"
 #~ msgstr "Authorization vpn pptp, pppoe"
 
@@ -7482,9 +9889,6 @@ msgstr "Additionally"
 #~ msgid "Движок рендеринга"
 #~ msgstr "Rendering engine"
 
-#~ msgid "удалить"
-#~ msgstr "delete"
-
 #~ msgid "Не обнаружен работающий UPS, база переведена в защищенный режим"
 #~ msgstr "Working UPS was not found, database transferred to protected mode"
 
@@ -7506,23 +9910,8 @@ msgstr "Additionally"
 #~ msgid "Архивный аудит"
 #~ msgstr "Archive audit"
 
-#~ msgid "Системный аудит"
-#~ msgstr "System audit"
-
 #~ msgid "Нет unique_form_post_id в форме!!!"
 #~ msgstr "No unique_form_post_id in form!!!"
-
-#~ msgid "Возможность читать %s"
-#~ msgstr "Ability to read %s"
-
-#~ msgid "Возможность изменять %s"
-#~ msgstr "Ability to change %s"
-
-#~ msgid "Возможность добавлять %s"
-#~ msgstr "Ability to add %s"
-
-#~ msgid "Возможность удалять %s"
-#~ msgstr "Ability to delete %s"
 
 #~ msgid "Начинаем выгрузку без направлений"
 #~ msgstr "Begin upload without directions"
@@ -7530,7 +9919,6 @@ msgstr "Additionally"
 #~ msgid "Выгружаем цену {0}"
 #~ msgstr "Unload price {0}"
 
-# DATABASE
 #~ msgid "Radius ACC Start"
 #~ msgstr "Radius ACC Start"
 
@@ -7554,9 +9942,6 @@ msgstr "Additionally"
 
 #~ msgid "Контактная информация"
 #~ msgstr "Contact Information"
-
-#~ msgid "Личный кабинет"
-#~ msgstr "Personal cabinet"
 
 #~ msgid "Место регистрации"
 #~ msgstr "Place of registration"
@@ -7639,9 +10024,6 @@ msgstr "Additionally"
 #~ msgid "Условия дополнительные"
 #~ msgstr "Additional conditions"
 
-#~ msgid "Установить поля абоненту"
-#~ msgstr "Set the field to the subscriber"
-
 #~ msgid "Radius атрибуты"
 #~ msgstr "Radius attributes"
 
@@ -7659,9 +10041,6 @@ msgstr "Additionally"
 
 #~ msgid "Договора"
 #~ msgstr "Contract"
-
-#~ msgid "Журнал звонков"
-#~ msgstr "Calls log"
 
 #~ msgid "Журнал операций со счетом"
 #~ msgstr "Action Log with bill"
@@ -7708,9 +10087,6 @@ msgstr "Additionally"
 #~ msgid "Порты"
 #~ msgstr "Ports"
 
-#~ msgid "Праздники периода"
-#~ msgstr "Holiday period"
-
 #~ msgid "Пулы IP адресов используемые в системе"
 #~ msgstr "IP address pools used in system"
 
@@ -7750,9 +10126,6 @@ msgstr "Additionally"
 #~ msgid "Услуги в пакете"
 #~ msgstr "Services in the package"
 
-#~ msgid "Шаблоны печатных форм"
-#~ msgstr "Templates of printing forms"
-
 #~ msgid "Шаблоны расположены в /app/asr_billing/var/print_tmpl."
 #~ msgstr "Templates are located in /app/asr_billing/var/print_tmpl."
 
@@ -7768,500 +10141,5 @@ msgstr "Additionally"
 #~ msgid "Для отображения результата выполнения команды вывод необходимо направить в файл /tmp/<user_id>_<event_name>"
 #~ msgstr "To display the command output you should redirect the output to file /tmp/<user_id>_<event_name>"
 
-#~ msgid "по vpn pptp, pppoe"
-#~ msgstr "by vpn, pptp, pppoe"
-
-#~ msgid "по ip static"
-#~ msgstr "by ip static"
-
-#~ msgid "по CarbonAgent"
-#~ msgstr "by CarbonAgent"
-
-#~ msgid "по ip+CarbonAgent"
-#~ msgstr "by ip+CarbonAgent"
-
-#~ msgid "через веб"
-#~ msgstr "via web"
-
-#~ msgid "через ip+веб"
-#~ msgstr "via ip+web"
-
-#~ msgid "любая через RADIUS"
-#~ msgstr "any via RADIUS"
-
-#~ msgid "по OPT82"
-#~ msgstr "by OPT82"
-
-#~ msgid "по ip+radius"
-#~ msgstr "by ip+radius"
-
-#~ msgid "1-Списывать абонентскую плату за каждый день последовательно/0-Списывать только за последний день"
-#~ msgstr "1-To write off a monthly fee for each day consistently/0-Write off only in last day"
-
-#~ msgid "Post параметры СМС шлюза"
-#~ msgstr "Post parameters of SMS gateway"
-
-#~ msgid "RADIUS разрешить переподключение(для повисших сессий)"
-#~ msgstr "RADIUS allow reconnection(for unresponsive sessions)"
-
-#~ msgid "Автоматически обновлять страницу при окончании обработки абонента"
-#~ msgstr "Automatically update page when subscriber's processing is over"
-
-#~ msgid "Авторизация по RADIUS только для RADIUS-пользователей"
-#~ msgstr "Authorization for RADIUS only for RADIUS-users"
-
-#~ msgid "Байт дата"
-#~ msgstr "Byte data"
-
-#~ msgid "Версия"
-#~ msgstr "Version"
-
-#~ msgid "Версия справочных таблиц"
-#~ msgstr "Version of reference tables"
-
-#~ msgid "Включить vidimax в ЛК"
-#~ msgstr "Enable vidimax in personal cabinet"
-
-#~ msgid "Включить конструктор тарифа"
-#~ msgstr "Enable tariff wizard"
-
-#~ msgid "Включить статистику VOIP в ЛК"
-#~ msgstr "Enable VOIP statistic in personal cabinet"
-
-#~ msgid "Время сбора NetFlow после отключения пользователя"
-#~ msgstr "Time of NetFlow gathering after user disconnection"
-
-#~ msgid "Вход по ip в личный кабинет, без логина и пароля"
-#~ msgstr "Log in by ip in personal cabinet, without login and password"
-
-#~ msgid "Группа для заявок (не более 100 пользователей)"
-#~ msgstr "Group for requests (no more than 100 users)"
-
-#~ msgid "Длина городского номера"
-#~ msgstr "Length of city number"
-
-#~ msgid "Длина локального номера"
-#~ msgstr "Length of local numbers"
-
-#~ msgid "Для NAS серверов с простой конфигурацией"
-#~ msgstr "For NAS servers with a simple configuration"
-
-#~ msgid "Для простейшей схемы управления NAS сервером"
-#~ msgstr "For a simple DNS server management scheme"
-
-#~ msgid "Единица тарифицируемой информации (1 МБайт)"
-#~ msgstr "Unit of tariffed information (1 MByte)"
-
-#~ msgid "Заголовок писем"
-#~ msgstr "Header of letters"
-
-#~ msgid "Запретить менять пароль в личном кабинете"
-#~ msgstr "Disable changing the password in the profile"
-
-#~ msgid "Запретить подключение VPN RADIUS-пользователям с isNAT"
-#~ msgstr "Disable connection VPN RADIUS-users with isNAT"
-
-#~ msgid "Запретить редактировать Carbon XGE local(id=0)"
-#~ msgstr "Disable editing Carbon XGE local(id=0)"
-
-#~ msgid "Запретить удалять группы если в них есть абоненты"
-#~ msgstr "Disable delete groups if there are subscribers"
-
-#~ msgid "Запрет подключения по VPN при другом типе авторизации"
-#~ msgstr "Disable connection by VPN with another authorization type"
-
-#~ msgid "Игнорировать неактуальные сообщения"
-#~ msgstr "Ignore irrelevant messages"
-
-#~ msgid "Иначе списывать только если не отключен"
-#~ msgstr "Otherwise, only to write off if not disabled"
-
-#~ msgid "Иначе только если стоит Переподключение в свойствах абонента или переподключение по таймауту"
-#~ msgstr "Otherwise, only if there is a Reconnection in subscriber's properties, or reconnection on timeout"
-
-#~ msgid "Интервал обмена с Carbon Agent, сек"
-#~ msgstr "Interval of communication with Carbon Agent, sec"
-
-#~ msgid "Используйте только, если обеспечили защиту от подстановки"
-#~ msgstr "Use only if provided protection against substitution"
-
-#~ msgid "Количество попыток отправки при неудаче"
-#~ msgstr "Number of attempts to send on failure"
-
-#~ msgid "Коэффициент для перевода внутреннего представления денег в системе в реальные денежные единицы"
-#~ msgstr "Coefficient to convert the internal representation of money in the system in real monetary units"
-
-#~ msgid "Курс валюты учеты для входящих документов"
-#~ msgstr "Exchange rate for incoming documents"
-
-#~ msgid "Название денег страны"
-#~ msgstr "Name of money of the country"
-
-#~ msgid "например 27.5 рублей за доллар, указать 27.5"
-#~ msgstr "eg 27.5 rubles per dollar, specify 27.5"
-
-#~ msgid "Не авторизовать по RADIUS при отрицательном балансе"
-#~ msgstr "Don't authorize by RADIUS with a negative balance"
-
-#~ msgid "Нельзя менять пароль через личный кабинет"
-#~ msgstr "It is impossible to change the password via personal cabinet"
-
-#~ msgid "Необходимо в редких случаях для обхода проблем маршрутизации белых адресов"
-#~ msgstr "It is rarely necessary to bypass the white address routing problems"
-
-#~ msgid "Не отображать активацию карт оплаты в личном кабинете"
-#~ msgstr "Do not display the activation of payment cards in your account"
-
-#~ msgid "Не отображать оповещения старее n, минут"
-#~ msgstr "Do not display the alerts over n, minutes"
-
-#~ msgid "Не отображать скорость и время в тарифах"
-#~ msgstr "Do not show speed and time in tariffs"
-
-#~ msgid "Не предлагать тарифы в ЛК, если не указана линейка услуг"
-#~ msgstr "Do not offer tarrifs in personal cabinet, if line services isn't specified"
-
-#~ msgid "Не пускать в личный кабинет не со своего IP-адреса"
-#~ msgstr "Don't allow to login in personal cabinet with foreign IP-address"
-
-#~ msgid "Не рекомендуется провайдерам"
-#~ msgstr "Not recommended to providers"
-
-#~ msgid "Нужно перестроить дерево абонентов"
-#~ msgstr "Need to rebuild tree of subscribers"
-
-#~ msgid "Обнулять таблицы кэш авторизаций при рестарте icsd oldlogik"
-#~ msgstr "Reset authorizations cache table when restarting icsd oldlogik"
-
-#~ msgid "Обязательно включить для провайдеров"
-#~ msgstr "Obligatory enable for providers"
-
-#~ msgid "Оповещение пользователей по e-mail и winpopup"
-#~ msgstr "User notification by e-mail and winpopup"
-
-#~ msgid "Оповещение по почте и winpopup"
-#~ msgstr "Notification by mail and winpopup"
-
-#~ msgid "Отвечать на RADIUS запросы только если у пользователя авторизация по радиусу"
-#~ msgstr "Respond to RADIUS requests only if the user has authorization to RADIUS"
-
-#~ msgid "Отключать пользователей неактивных n, минут"
-#~ msgstr "Disable users inactive for n, minutes"
-
-#~ msgid "Отключать пользователей неактивных n, минут. Не рекомендуется."
-#~ msgstr "Disable users inactive for n, minutes"
-
-#~ msgid "Отображать Help Desk в кабинете"
-#~ msgstr "Display Help Desk in cabinet"
-
-#~ msgid "Отображать Help Desk у пользователя"
-#~ msgstr "Display Help Desk at user"
-
-#~ msgid "Отображать Аудит у пользователя"
-#~ msgstr "Display Audit at user"
-
-#~ msgid "Отображать все события изменения и события пользователя в кабинете"
-#~ msgstr "Display all change events and user's events in cabinet"
-
-#~ msgid "Отображать дату договора в дереве абонентов"
-#~ msgstr "Display date of the agreement in subscribers' tree"
-
-#~ msgid "Отображать детальную статистику в мегабайтах"
-#~ msgstr "Display detailed statistics in megabytes"
-
-#~ msgid "Отображать подписанные Услуги у пользователя в кабинете"
-#~ msgstr "Display subscribed Services of user in cabinet"
-
-#~ msgid "Отображать суммы в Личном кабинете в деньгах страны"
-#~ msgstr "Display amounts in Personal cabinet in the country's money"
-
-#~ msgid "Отображать суммы в менеджере в деньгах страны(недоступно)"
-#~ msgstr "Display amounts in Personal cabinet in the country's money(not available)"
-
-#~ msgid "Отображать Услуги у пользователя"
-#~ msgstr "Display services at user"
-
-#~ msgid "Пересчитывать недостачу средств при смене тарифа"
-#~ msgstr "Recalculate shortage of funds when changing tariff"
-
-#~ msgid "Позволяет на NAS сервере сделать DNAT на страницу с переадресацией"
-#~ msgstr "Allows NAS server to do DNAT on page with redirection"
-
-#~ msgid "Показывать абонентов онлайн в дереве абонентов"
-#~ msgstr "Display online subscribers in subscribers' tree"
-
-#~ msgid "Показывать сокращенную информацию о балансе"
-#~ msgstr "Display abridged balance information"
-
-#~ msgid "Показывать старые задачи CRM"
-#~ msgstr "Display old tasks in CRM"
-
-#~ msgid "Показывать только актуальные для периода акты и счета"
-#~ msgstr "Display only relevant for periods of acts and bills"
-
-#~ msgid "Показывать только текущий баланс"
-#~ msgstr "Display only current balance"
-
-#~ msgid "Показывать экран welcome"
-#~ msgstr "Display welcome screen"
-
-#~ msgid "Пользователь будет отключен, если NAS не посылает"
-#~ msgstr "User will be disconnected if the NAS does not send"
-
-#~ msgid "По-умолчанию разрешено подключиться по VPN"
-#~ msgstr "By default, allowed to connect via VPN"
-
-#~ msgid "Предупреждать об окончании баланса за n дней"
-#~ msgstr "Warn about balance's ending for n days"
-
-#~ msgid "Префикс для договоров"
-#~ msgstr "Prefix for contracts"
-
-#~ msgid "Префикс для логинов"
-#~ msgstr "Prefix for login"
-
-#~ msgid "При автоматическом формировании счетов на предоплату использовать данные только за следующий месяц"
-#~ msgstr "For automatic formation of a prepay bills use data only for next month"
-
-#~ msgid "Продолжительность обещанного платежа"
-#~ msgstr "Duration of promised payment"
-
-#~ msgid "Пул адресов для абонентов с превышенным лимитом"
-#~ msgstr "Pool of addresses for subscribers with exceeding limit"
-
-#~ msgid "Пускать в кабинет только со своего IP адреса"
-#~ msgstr "Allow to login in personal cabinet only with own IP-address"
-
-#~ msgid "Разбор адреса при создании абонента через регулярные выражения"
-#~ msgstr "Parse address when creating a subscriber using a regular expressions"
-
-#~ msgid "Разрешить CarbonAgent для отключенных пользователей"
-#~ msgstr "Allow CarbonAgent for disabled users"
-
-#~ msgid "Разрешить event.sh, вкл в лок консоли а не в ICSM"
-#~ msgstr "Allow event.sh, turn on in local console, but in in ICSM"
-
-#~ msgid "Разрешить интернет всем абонентам, независимо от баланса"
-#~ msgstr "Allow internet to all subscribers, regardless of balance"
-
-#~ msgid "Разрешить подключать агенту только по имени без пароля"
-#~ msgstr "Allow to connect to the agent only by name without a password"
-
-#~ msgid "Разрешить получать информацию через Carbon Agent даже если пользователь отключен"
-#~ msgstr "Allow to receive information via Carbon Agent even if user is disabled"
-
-#~ msgid "Разрешить смену MAC-адреса через ЛК"
-#~ msgstr "Allow change the MAC-address via personal cabinet"
-
-#~ msgid "Разрывать сессию при переходе в отрицательный баланс"
-#~ msgstr "Disconnects the session in the transition to a negative balance"
-
-#~ msgid "Расчет цифровой подписи md5"
-#~ msgstr "Calculation digital signature md5"
-
-#~ msgid "Регистрозависимый логин"
-#~ msgstr "Case-sensitive login"
-
-#~ msgid "Рекомендуется 0-600"
-#~ msgstr "Recommended 0-600"
-
-#~ msgid "Рекомендуется 300-1200"
-#~ msgstr "Recommended 300-1200"
-
-#~ msgid "Рекомендуется для большинства провайдеров"
-#~ msgstr "Recommended for most providers"
-
-#~ msgid "Рекомендуется для работы с NAS серверами"
-#~ msgstr "Recommended for use with DNS servers"
-
-#~ msgid "Рекомендуется скорость добавить в имя тарифа"
-#~ msgstr "Recommended to add speed to tariff name"
-
-#~ msgid "руб"
-#~ msgstr "rub"
-
-#~ msgid "Сквозная нумерация всех док. для конеч.пользователей"
-#~ msgstr "Continuous numbering of all documents for end user"
-
-#~ msgid "Скрыть вкладку \"Оплата\" в ЛК"
-#~ msgstr "Hide tab \"Payment\" in personal cabinet"
-
-#~ msgid "Скрыть вкладку \"Тариф\" в ЛК"
-#~ msgstr "Hide tab \"Tariff\" in personal cabinet"
-
-#~ msgid "Скрыть в фин. операциях услуги с 0 ценой"
-#~ msgstr "Hide in financial operations with 0 cost service"
-
-#~ msgid "Скрыть ссылку \"Статистика посещений\" в ЛК"
-#~ msgstr "Hide reference \"visitor statistics\" in personal cabinet"
-
-#~ msgid "Создавать контрольную сумму для номера договора"
-#~ msgstr "Create checksum for the contract's number"
-
-#~ msgid "Сортировать абонентов в дереве по алфавиту"
-#~ msgstr "Sort subscribers in tree alphabetically"
-
-#~ msgid "Списывать ежедн. абон.плату у отключенных пользователей"
-#~ msgstr "Write-off daily subscription fee from disabled users"
-
-#~ msgid "Считать дроп drop трафик"
-#~ msgstr "Count drop traffic"
-
-#~ msgid "Таймаут accounting update"
-#~ msgstr "Timeout of accounting update"
-
-#~ msgid "Также запрещает редактирование даты операции"
-#~ msgstr "Also prohibits editing operation date"
-
-#~ msgid "Телефонный код города"
-#~ msgstr "Telephone city code"
-
-#~ msgid "Тихий час заканчивается в"
-#~ msgstr "Quiet time ends at"
-
-#~ msgid "Тихий час начиначется с"
-#~ msgstr "Quiet time starts at"
-
-#~ msgid "Универсальный пароль для ЛК"
-#~ msgstr "Universal password for personal cabinet"
-
-#~ msgid "Учет"
-#~ msgstr "Accounting"
-
-#~ msgid "Флаг для перестройки  GLN_USR_TREE_UPDATE"
-#~ msgstr "Flag for reconstruction GLN_USR_TREE_UPDATE"
-
-#~ msgid "Формирование счетов на предоплату (автоматическое) только на следующий месяц"
-#~ msgstr "Formation of a prepay bills (automatic) only for next month"
-
-#~ msgid "Формировать акт на с датой предыдущего дня"
-#~ msgstr "Formation of a prepay acts with date of previous day"
-
-#~ msgid "Число месяца выставления счетов на предоплату"
-#~ msgstr "Number of month of issuing bills for prepay"
-
-#~ msgid "Число месяца до которого не проверять превышение баланса"
-#~ msgstr "Number of month until which do not check exceeding the balance"
-
-#~ msgid "На координацию"
-#~ msgstr "On coordination"
-
-#~ msgid "В подключении"
-#~ msgstr "In connection"
-
-#~ msgid "Возврат"
-#~ msgstr "Return"
-
-#~ msgid "На координацию 1"
-#~ msgstr "On coordination 1"
-
-#~ msgid "На удержании"
-#~ msgstr "On hold"
-
-#~ msgid "Закрыт"
-#~ msgstr "Closed"
-
-#~ msgid "На координацию 2"
-#~ msgstr "On coordination 2"
-
-#~ msgid "На координацию 3"
-#~ msgstr "On coordination 3"
-
-#~ msgid "В ожидании"
-#~ msgstr "Pending"
-
-#~ msgid "Помощь сервиса"
-#~ msgstr "Help service"
-
-#~ msgid "Обслуживание"
-#~ msgstr "Service"
-
-#~ msgid "Приостановлен по инициативе клиента"
-#~ msgstr "Paused by the client's initiative"
-
-#~ msgid "Возврат в СТС"
-#~ msgstr "Return to the CTC"
-
-#~ msgid "Возврат в ОП"
-#~ msgstr "Return to OP"
-
-#~ msgid "Принят в обслуживание"
-#~ msgstr "Accepted into service"
-
-#~ msgid "Подключен частично"
-#~ msgstr "Partially connected"
-
 #~ msgid "WiFi"
 #~ msgstr "WiFi"
-
-#~ msgid "В обслуживании"
-#~ msgstr "In service"
-
-#~ msgid "Отказ"
-#~ msgstr "Refusal"
-
-#~ msgid "Разово"
-#~ msgstr "Single-time"
-
-#~ msgid "Ежечасно"
-#~ msgstr "Hourly"
-
-#~ msgid "Ежедневно"
-#~ msgstr "Daily"
-
-#~ msgid "Ежемесячно"
-#~ msgstr "Monthly"
-
-#~ msgid "Ежемесячно равными долями в день"
-#~ msgstr "Equal shares monthly per day"
-
-#~ msgid "Трафик"
-#~ msgstr "Traffic"
-
-#~ msgid "Скидка\\Наценка"
-#~ msgstr "Discount\\markup"
-
-#~ msgid "Системный"
-#~ msgstr "Systematic"
-
-#~ msgid "Не определено"
-#~ msgstr "Undefined"
-
-#~ msgid "Локальная сеть"
-#~ msgstr "Local network"
-
-#~ msgid "Внутригород"
-#~ msgstr "Intercity"
-
-#~ msgid "Льготные сайты"
-#~ msgstr "Preferential sites"
-
-#~ msgid "Дни"
-#~ msgstr "Days"
-
-#~ msgid "дн."
-#~ msgstr "d."
-
-#~ msgid "Мегабайты"
-#~ msgstr "Megabytes"
-
-#~ msgid "мб."
-#~ msgstr "MB"
-
-#~ msgid "Минуты"
-#~ msgstr "Minutes"
-
-#~ msgid "мин."
-#~ msgstr "min."
-
-#~ msgid "Часы"
-#~ msgstr "Hours"
-
-#~ msgid "час."
-#~ msgstr "h."
-
-#~ msgid "Штуки"
-#~ msgstr "Pieces"
-
-#~ msgid "шт."
-#~ msgstr "p."

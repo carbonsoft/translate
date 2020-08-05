@@ -3,6 +3,7 @@
 import filecmp
 import logging
 import os
+import re
 import shutil
 
 import argparse
@@ -23,38 +24,18 @@ DJANGO_TR_FILE_PATH = 'locale/en/LC_MESSAGES/django.po'
 
 
 def get_django_billing_words():
+    logger.info(u'Добавляем фразы из базы данных в админку биллинга')
+    res = run_bash_command(CUR_DIR + '/convert_sql_to_python.py --sql-dump {0}'.format(CUR_DIR + '/data_system.sql'))
+    logger.info(res)
+    if res[0] == 0:
+        shutil.copy(CUR_DIR + '/data_system_translate.py', os.path.join(BILLING_DJANGO_PATH, 'admin'))
+
     logger.info(u'Генерируем фразы из админки биллинга')
     res = run_bash_command(CUR_DIR + '/gen_words.sh {0}'.format(BILLING_DJANGO_PATH))
     logger.info(res)
     if res[0]:
         raise Exception(u'Ошибка генерации фраз для перевода')
     shutil.copy(BILLING_DJANGO_PATH + DJANGO_TR_FILE_PATH, BILLING_TR_PATH)
-    # TODO пока закомментируем
-    # _get_daemons_words()
-    # # Обьединим переводы
-    # couple = False
-    # with open(BILLING_TR_PATH, 'r') as billing_tr_file:
-    #     billing_tr = billing_tr_file.readlines()
-    #     with open(DAEMONS_TR_PATH, 'r') as daemons_tr_file:
-    #         for line in daemons_tr_file.readlines():
-    #             if not line.strip() or line.startswith('#'):
-    #                 continue
-    #             if couple and line.startswith('msgstr'):
-    #                 couple = False
-    #                 continue
-    #             if line in billing_tr and line.startswith('msgid'):
-    #                 couple = True
-    #                 continue
-    #             billing_tr.append(line)
-    #     os.remove(DAEMONS_TR_PATH)
-    # # Запишем новый перевод
-    # with open(BILLING_TR_PATH, 'w') as billing_tr_file:
-    #     for line in billing_tr:
-    #         if line.startswith('#') or not line.strip():
-    #             continue
-    #         if line.startswith('msgid'):
-    #             billing_tr_file.write("\n")
-    #         billing_tr_file.write(line)
 
 
 def get_django_appadmin_words():
@@ -89,11 +70,10 @@ def get_daemons_words():
 
 def get_carbondb_data():
     logger.info(u'Проверяем появилось ли чтото новое в БД')
-    if not filecmp.cmp(CUR_DIR + '/data_system.sql', DB_PATH, shallow=False):
+    carbondb_path = CUR_DIR + '/data_system.sql'
+    if not os.path.isfile(carbondb_path) or not filecmp.cmp(carbondb_path, DB_PATH, shallow=False):
         logger.info(u'Изменилась база данных: необходимо обоновить перевод')
-        run_bash_command('diff -e  {0}/data_system.sql {0}/carbon_db/data_system.sql '
-                         '> {0}/data_system.sql.diff.$$; ls {0}/data_system.sql.diff.$$'.format(CUR_DIR))
-        shutil.copy(CUR_DIR + '/carbon_db/data_system.sql', CUR_DIR + '/data_system.sql')
+        shutil.copy(CUR_DIR + '/carbon_db/data_system.sql', carbondb_path)
     else:
         logger.info(u'База не поменялась')
 
@@ -104,6 +84,11 @@ def compile_translate():
         logger.info(res)
         raise Exception(u'Не удалось скомпилировать перевод')
     logger.info(res)
+
+
+def copy_no_overwrite(src_path, dst_path):
+    if os.path.exists(src_path) and not os.path.exists(dst_path):
+        shutil.copy(src_path, dst_path)
 
 
 def clone_or_pull(repo_url, dir_name):
@@ -125,6 +110,35 @@ def _init():
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/django-appadmin.git', 'django-appadmin')
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/djsite.git', 'djsite')
     clone_or_pull('gitlab@git.carbonsoft.ru:crb5/carbon_db.git', 'carbon_db')
+    shutil.copy(DAEMONS_TR_PATH, os.path.join(DAEMONS_PATH, 'translate.po'))
+    shutil.copy(BASE_TR_PATH, os.path.join(BASE_DJANGO_PATH, DJANGO_TR_FILE_PATH))
+    shutil.copy(BILLING_TR_PATH, os.path.join(BILLING_DJANGO_PATH, DJANGO_TR_FILE_PATH))
+
+
+def extract_variable_from_bash(variable, data):
+    value = re.search(r'(.*?{0}.*?)\n'.format(variable), data).group(0).split('=')[1]
+    value = value.replace("'", '').replace('\n', '')
+    return value
+
+
+def install():
+    with open(os.path.join(CUR_DIR, 'translate.hook'), 'r') as hook_file:
+        hook_data = hook_file.read()
+
+    base_django_path = './' + extract_variable_from_bash('BASE_DJANGO_PATH', hook_data)
+    billing_django_path = './' + extract_variable_from_bash('BILLING_DJANGO_PATH', hook_data)
+    daemons_path = './' + extract_variable_from_bash('DAEMONS_PATH', hook_data)
+    locale_path = extract_variable_from_bash('LOCALE_PATH', hook_data)
+
+    daemons_tr_path = os.path.join('/app/asr_billing/', daemons_path, 'daemons.mo')
+    billing_django_tr_path = os.path.join('/app/asr_billing/', billing_django_path, locale_path, 'django.mo')
+    base_django_tr_path = os.path.join('/app/base/', base_django_path, locale_path, 'django.mo')
+
+    shutil.copy(DAEMONS_TR_PATH.replace('.po', '.mo'), daemons_tr_path)
+    shutil.copy(BILLING_TR_PATH.replace('.po', '.mo'), billing_django_tr_path)
+    shutil.copy(BASE_TR_PATH.replace('.po', '.mo'), base_django_tr_path)
+
+    logger.info(u'Перевод установлен')
 
 
 if __name__ == '__main__':
@@ -134,11 +148,13 @@ if __name__ == '__main__':
     args = parser.parse_args()
     if args.cmd == 'get':
         _init()
+        get_carbondb_data()
         get_django_billing_words()
         get_django_appadmin_words()
         get_daemons_words()
-        get_carbondb_data()
     elif args.cmd == 'put':
         compile_translate()
     elif args.cmd == 'init':
         _init()
+    elif args.cmd == 'install':
+        install()
