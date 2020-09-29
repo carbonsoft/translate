@@ -9,6 +9,7 @@ dir=$1
 is_django=${2:-1}
 cd $dir
 if [ "$is_django" = "1" ]; then
+	mkdir -p locale
 	python2.6 /app/base/usr/lib/python2.6/site-packages/django/bin/django-admin.py \
 		makemessages -l en -a --no-wrap --no-location
 	ls $dir/locale/en/LC_MESSAGES/*.po

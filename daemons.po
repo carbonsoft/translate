@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Daemons 1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-03-20 13:51+0500\n"
+"POT-Creation-Date: 2020-08-04 02:16+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -19,392 +19,406 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:50
+#: /root/translate/daemons/abonent_block.py:50
 msgid "Нельзя блокировать группу!"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:53
+#: /root/translate/daemons/abonent_block.py:53
 msgid "У абонента нет услуг которые можно заблокировать!"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:125
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:446
+#: /root/translate/daemons/abonent_block.py:125
+#: /root/translate/daemons/abonent_block.py:446
 msgid "Абонент id={0} заблокирован по причине: {1}"
 msgstr "Subscriber id={0} is blocked due to: {1}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:173
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:554
+#: /root/translate/daemons/abonent_block.py:173
+#: /root/translate/daemons/abonent_block.py:554
 msgid "Абонент id={0} разблокирован ({1})"
 msgstr "Subscriber id={0} is unlocked ({1})"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:175
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:551
+#: /root/translate/daemons/abonent_block.py:175
+#: /root/translate/daemons/abonent_block.py:551
 msgid "Абонент id={0} разблокирован администратором {1} ({2})"
 msgstr "Subscriber id={0} is unlocked by the administrator {1} ({2})"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:186
+#: /root/translate/daemons/abonent_block.py:186
 msgid "Заблокирован вручную через negbal"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:350
+#: /root/translate/daemons/abonent_block.py:350
 msgid "Сумма задолженности: {0:.2f}"
 msgstr "Amount of debt: {0:.2f}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:580
+#: /root/translate/daemons/abonent_block.py:580
 msgid "Превышен лимит после разблокировки услуги"
 msgstr "Limit is exceeded after unlock service"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:605
+#: /root/translate/daemons/abonent_block.py:605
 msgid "Добровольная блокировка"
 msgstr "Voluntary lock"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:626
+#: /root/translate/daemons/abonent_block.py:626
 msgid "Добровольная блокировка c {0} до {1}"
 msgstr "Voluntary lock from {0} to {1}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:634
+#: /root/translate/daemons/abonent_block.py:634
 msgid "Ошибка установки добровольной блокировки абоненту id={0}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:652
+#: /root/translate/daemons/abonent_block.py:652
 #, python-format
 msgid "У абонента %s не указан тариф"
 msgstr "Subscriber's %s tariff isn't specified"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:666
+#: /root/translate/daemons/abonent_block.py:666
 msgid "Ошибка снятия добровольной блокировки у абонента id={0}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:679
+#: /root/translate/daemons/abonent_block.py:679
 #, python-format
 msgid "Блокировка в %s"
 msgstr "Lock in %s"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:691
+#: /root/translate/daemons/abonent_block.py:691
 msgid "Ошибка автоматической блокировки/разблокировки абонента id={0}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:711
+#: /root/translate/daemons/abonent_block.py:711
 msgid "Превышен лимит после автоматического отключения безлимита"
 msgstr "Limit exceeded after auto shutdown unlimited tariff"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/abonent_block.py:716
+#: /root/translate/daemons/abonent_block.py:716
 msgid "Ошибка при автоматическом снятии безлимина у счета {0}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:52
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:98
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:186
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:317
+#: /root/translate/daemons/account_traf.py:52
+#: /root/translate/daemons/account_traf.py:110
+#: /root/translate/daemons/account_traf.py:222
+#: /root/translate/daemons/account_traf.py:356
 msgid "ОК"
 msgstr "OK"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:172
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:409
+#: /root/translate/daemons/account_traf.py:208
+#: /root/translate/daemons/account_traf.py:448
 msgid "Трафик не попал в диапазон времени: от {0} до {1}(текущее время {2})"
 msgstr "Traffic is not ranked in time range: from {0} to {1}(current time {2})"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:780
+#: /root/translate/daemons/account_traf.py:819
 #, python-format
 msgid "Не найден абонент: %s"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:794
+#: /root/translate/daemons/account_traf.py:833
 #, python-format
 msgid "У абонента нет ни одной услуги трафика: abonent_id=%s, ip=%s"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:808
+#: /root/translate/daemons/account_traf.py:847
 msgid "Ошибка активации абонента {}: {}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:837
+#: /root/translate/daemons/account_traf.py:876
 msgid "У абонента {0} нет услуги трафика для {1}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:897
+#: /root/translate/daemons/account_traf.py:936
 msgid "Недостаточно средств на счету: {0:.2f}, баланс {1:.2f} (account_traf)"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:963
+#: /root/translate/daemons/account_traf.py:1022
 msgid "Ошибка обработки трафика"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:978
+#: /root/translate/daemons/account_traf.py:1037
 msgid "Неизвестный трафик: user_id=-1, user_ip=0 (NAS не опознал трафик)"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_traf.py:1153
+#: /root/translate/daemons/account_traf.py:1212
 #, python-format
 msgid "Не найден абонент для %d записей"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_voip.py:352
+#: /root/translate/daemons/account_voip.py:355
 msgid "Телефония"
 msgstr "Telephony"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_voip.py:444
+#: /root/translate/daemons/account_voip.py:463
 msgid "Ошибка активации абонента: {0}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/account_voip.py:1001
+#: /root/translate/daemons/account_voip.py:1050
 msgid "Перерасчет VOIP оператора {OPERATOR_ID} за период с {SDATE} по {EDATE}"
 msgstr ""
 "Recalculation of VOIP operator {OPERATOR_ID} for period from {SDATE} to "
 "{EDATE}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:39
+#: /root/translate/daemons/balance_change.py:39
 msgid ""
 "Подключена лояльность на основе правила скидки id={0}, абонент платит в "
 "месяц {1}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:59
+#: /root/translate/daemons/balance_change.py:59
 msgid ""
 "Подключена лояльность на основе правила скидки id={0}, абонент платит "
 "непрерывно"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:83
+#: /root/translate/daemons/balance_change.py:83
 msgid ""
 "Подключена лояльность на основе правила скидки id={0}, абонент заплатил "
 "за {1} месяцев"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:656
+#: /root/translate/daemons/balance_change.py:661
 msgid "Превышен лимит(balance_change) {1}<{0}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:673
+#: /root/translate/daemons/balance_change.py:678
 msgid "Отмена обещанного платежа users_usluga_id={0}, поступление оплаты."
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:1090
+#: /root/translate/daemons/balance_change.py:1095
 msgid "Сторнирование акта"
 msgstr "Reversing act"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:1097
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:1273
+#: /root/translate/daemons/balance_change.py:1102
+#: /root/translate/daemons/balance_change.py:1265
 msgid "Сторнирование акта №{0} для открытия периода"
 msgstr "Reversing act №{0} for opening period"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:1099
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:1275
+#: /root/translate/daemons/balance_change.py:1104
 msgid "Сторнирование акта №{0} для открытия периода из-за проводки с типом {1}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:1146
+#: /root/translate/daemons/balance_change.py:1131
 msgid "Корректировка баланса с {HUMAN_BALANCE} на {SUMM}"
 msgstr "Balance adjustment from {HUMAN_BALANCE} to {SUMM}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/balance_change.py:1244
+#: /root/translate/daemons/balance_change.py:1159
+msgid "из-за проводки с типом {}"
+msgstr ""
+
+#: /root/translate/daemons/balance_change.py:1236
 msgid "Сторнирование акта {0}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/common.py:630
+#: /root/translate/daemons/common.py:633
 msgid "Входящий остаток за предыдущий месяц"
 msgstr "Incoming balance for the previous month"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/common.py:715
+#: /root/translate/daemons/common.py:720
 msgid "Сторнирование проводки {0}"
 msgstr "Reversal of wiring {0}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/common.py:817
+#: /root/translate/daemons/common.py:822
 msgid "Сторнирование списаний услуг за период от {0} до {1}"
 msgstr "Reversal of write-offs of service during the period from {0} to {1}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/common.py:819
+#: /root/translate/daemons/common.py:824
 msgid ", комментарий: {0}"
 msgstr ", comment: {0}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/common.py:845
+#: /root/translate/daemons/common.py:850
 msgid "Закрытие периода {close_date} числом"
 msgstr "Closing period {close_date} date"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/events.py:1188
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/tools.py:581
+#: /root/translate/daemons/events.py:1189 /root/translate/daemons/tools.py:614
 msgid "Обновление даты активации абонента {0}. Установлено: {1}"
 msgstr "Updating the date of activation subscriber {0}. Set: {1}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/fin_operation.py:479
+#: /root/translate/daemons/fin_operation.py:482
 msgid "Счет на предоплату"
 msgstr "Bill for prepay"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/pay_cards.py:69
+#: /root/translate/daemons/pay_cards.py:69
 msgid "Карточный абонент id={0} активирован"
 msgstr "Card subscriber id={0} is activated"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/pay_cards.py:116
+#: /root/translate/daemons/pay_cards.py:116
 msgid "Карточка абонента уничтожена"
 msgstr "Subscriber card is destroyed"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/pay_cards.py:154
+#: /root/translate/daemons/pay_cards.py:154
 msgid "Карточка абонента заблокирована"
 msgstr "Subscriber card is blocked"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/send_commands.py:173
+#: /root/translate/daemons/send_commands.py:173
 msgid "Абонент id={0} получил дублирующий договор {1} и будет изменен на {2}"
 msgstr ""
 "Subscriber id={0} has received a duplicate contract {1} and will be "
 "changed to {2}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/send_commands.py:246
+#: /root/translate/daemons/send_commands.py:246
 msgid "RADIUS_UPDATE превысил таймаут"
 msgstr "RADIUS_UPDATE exceeded the timeout"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/send_commands.py:268
+#: /root/translate/daemons/send_commands.py:268
 msgid "Состояние users.logged не совпадает с radius_logged"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/send_commands.py:293
+#: /root/translate/daemons/send_commands.py:293
 msgid ""
 "Отложенное отключение пользователя (KILL_TIME < current_timestamp, "
 "netflow_pause)"
 msgstr "Delayed user disabling (KILL_TIME < current_timestamp, netflow_pause)"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/send_commands.py:313
+#: /root/translate/daemons/send_commands.py:313
 msgid "USERS_WEBAUTH.LAST_UPDATE превысил таймаут"
 msgstr "USERS_WEBAUTH.LAST_UPDATE exceeded the timeout"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/tarif_change.py:38
+#: /root/translate/daemons/sensors.py:88
+msgid "SensorsLog id={}: Не найдена учетная запись с EXT_ID={} "
+msgstr ""
+
+#: /root/translate/daemons/sensors.py:96
+msgid "У абонента id={} нет активных услуг сенсоров; user_id={} ext_id={}"
+msgstr ""
+
+#: /root/translate/daemons/tarif_change.py:38
 msgid "Смена группы из-за превышения времени неоплаты {0} по тарифу {1}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/tarif_change.py:43
+#: /root/translate/daemons/tarif_change.py:43
 msgid ""
 "Невозможно перенести абонента в группу id={id},  это не группа!Тариф "
 "{tarif}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/tarif_change.py:98
+#: /root/translate/daemons/tarif_change.py:98
 msgid ""
 "Смена тарифа из-за превышения времени неоплаты {0} дня(ей) по тарифу #{1}"
 " на #{2}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/tarif_change.py:245
+#: /root/translate/daemons/tarif_change.py:247
 msgid "Заблокирован после смены лимита из тарифа"
 msgstr "Blocked after changing the limit from tariff"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/tools.py:613
+#: /root/translate/daemons/tools.py:646
 msgid "Превышен лимит(balance_change)"
 msgstr "Limit is exceeded(balance_change)"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/tools.py:622
+#: /root/translate/daemons/tools.py:655
 msgid "Отмена обещанного платежа usluga_id={0}, поступление оплаты"
 msgstr "Cancellation of promised payment usluga_id={0}, payment received"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:95
+#: /root/translate/daemons/usluga_abon_pay.py:95
 msgid "Услуга уже удалена! users_usluga_id={0} usluga_id={1} {2}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:98
+#: /root/translate/daemons/usluga_abon_pay.py:99
 msgid "Нельзя удалять тарифную услугу! Тариф: {0}, услуга: {1}, Абонент: {2}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:101
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:808
+#: /root/translate/daemons/usluga_abon_pay.py:102
+#: /root/translate/daemons/usluga_abon_pay.py:835
 msgid "Услугу можно удалить только в составе всего пакета"
 msgstr "Service can only be removed as part of the whole package"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:117
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:804
+#: /root/translate/daemons/usluga_abon_pay.py:118
+#: /root/translate/daemons/usluga_abon_pay.py:831
 msgid "Удалена"
 msgstr "Deleted"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:155
+#: /root/translate/daemons/usluga_abon_pay.py:156
 msgid "Превышен лимит после разблокировки услуги {0}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:174
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:785
+#: /root/translate/daemons/usluga_abon_pay.py:175
+#: /root/translate/daemons/usluga_abon_pay.py:812
 msgid "Выключена"
 msgstr "Disabled"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:215
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:888
+#: /root/translate/daemons/usluga_abon_pay.py:216
+#: /root/translate/daemons/usluga_abon_pay.py:915
 msgid "Активирована"
 msgstr "Activated"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:222
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:895
+#: /root/translate/daemons/usluga_abon_pay.py:223
+#: /root/translate/daemons/usluga_abon_pay.py:922
 msgid ""
 "Недостаточно средств для подключения услуги. users_usluga_id={0} "
 "abonent_id={1}"
 msgstr "Insufficient funds to connect service. users_usluga_id={0} abonent_id={1}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:333
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:794
+#: /root/translate/daemons/usluga_abon_pay.py:286
+msgid "Услуга {} не включена согласно правилу {}"
+msgstr ""
+
+#: /root/translate/daemons/usluga_abon_pay.py:350
+#: /root/translate/daemons/usluga_abon_pay.py:821
 msgid "Деактивирована"
 msgstr "Deactivated"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:343
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:1004
+#: /root/translate/daemons/usluga_abon_pay.py:360
+#: /root/translate/daemons/usluga_abon_pay.py:1031
 msgid "Превышен лимит после деактивации услуги: {0}"
 msgstr "Limit is exceeded after deactivation of service: {0}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:362
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:726
+#: /root/translate/daemons/usluga_abon_pay.py:379
+#: /root/translate/daemons/usluga_abon_pay.py:753
 msgid "Возобновлена"
 msgstr "Resumed"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:394
+#: /root/translate/daemons/usluga_abon_pay.py:412
 msgid "Списание услуги {1}({2}) сдвинуто на {0}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:420
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:757
+#: /root/translate/daemons/usluga_abon_pay.py:440
+#: /root/translate/daemons/usluga_abon_pay.py:784
 msgid "Включена"
 msgstr "Enabled"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:425
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:881
+#: /root/translate/daemons/usluga_abon_pay.py:445
+#: /root/translate/daemons/usluga_abon_pay.py:908
 msgid "Изменена"
 msgstr "Changed"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:472
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:818
+#: /root/translate/daemons/usluga_abon_pay.py:492
+#: /root/translate/daemons/usluga_abon_pay.py:845
 msgid "Добавлена"
 msgstr "Added"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:486
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:825
+#: /root/translate/daemons/usluga_abon_pay.py:506
+#: /root/translate/daemons/usluga_abon_pay.py:852
 msgid "Заблокирована при подключении"
 msgstr "Locked when connected"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:511
+#: /root/translate/daemons/usluga_abon_pay.py:535
 msgid "{0} услуга abonent_id={1}, users_usluga_id={2} {3}, текущий баланс {4:.2f}"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:533
+#: /root/translate/daemons/usluga_abon_pay.py:557
 msgid "Автоматический обещанный платеж за постоплату до {END_TIME}"
 msgstr "Automatic promised payment for postpaid until {END_TIME}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:536
+#: /root/translate/daemons/usluga_abon_pay.py:560
 msgid "Автоматический обещанный платеж по предоплате до {END_TIME}"
 msgstr "Automatic promised payment for prepaid until {END_TIME}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:719
+#: /root/translate/daemons/usluga_abon_pay.py:746
 msgid "Сдвинута на {0}"
 msgstr "Shifted to {0}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:753
+#: /root/translate/daemons/usluga_abon_pay.py:780
 msgid "Превышен лимит после окончания услуги: {0}"
 msgstr "Limit is exceeded after end of service: {0}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:990
+#: /root/translate/daemons/usluga_abon_pay.py:1017
 msgid "{0} услуга abonent_id={1}, usluga_id={2} {3}, текущий баланс {4:.2f}"
 msgstr "{0} service abonent_id={1}, usluga_id={2} {3}, current balance {4:.2f}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:1149
+#: /root/translate/daemons/usluga_abon_pay.py:1176
 msgid "Автоматическая услуга за {0} услугу(и) из линейки {1}"
 msgstr "Auto service for {0} service(s) from line {1}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:1253
+#: /root/translate/daemons/usluga_abon_pay.py:1280
 msgid "Комиссия за обещанный платеж"
 msgstr "Commission for promised payment"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:1488
+#: /root/translate/daemons/usluga_abon_pay.py:1515
 msgid ""
 "Недостаточно средств на счету: {0:.2f} (usluga_abon_pay), текущий баланс:"
 " {1:.2f}"
@@ -412,19 +426,19 @@ msgstr ""
 "Insufficient funds on account: {0:.2f} (usluga_abon_pay), current "
 "balance: {1:.2f}"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:1512
+#: /root/translate/daemons/usluga_abon_pay.py:1539
 msgid "Абонентская плата"
 msgstr "Subscription fee"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:1731
+#: /root/translate/daemons/usluga_abon_pay.py:1761
 msgid "Услуга {0} отключается т.к. выставлен разовый тип списания"
 msgstr "Service {0} is disabled, since one-time write-off type was exhibited"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:1899
+#: /root/translate/daemons/usluga_abon_pay.py:1920
 msgid "Услуга удалена"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:1909
+#: /root/translate/daemons/usluga_abon_pay.py:1930
 msgid ""
 "Дата включения услуги еще не наступила: "
 "ENABLE_DATE>datetime.datetime.now()"
@@ -432,15 +446,15 @@ msgstr ""
 "Date of inclusion service has not come yet: "
 "ENABLE_DATE>datetime.datetime.now()"
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:2018
+#: /root/translate/daemons/usluga_abon_pay.py:2039
 msgid "Услуга {} отключается т.к. выставлен разовый тип списания"
 msgstr ""
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:2044
+#: /root/translate/daemons/usluga_abon_pay.py:2083
 msgid "Услуга {0}({1}): "
 msgstr "Service {0}({1}): "
 
-#: /app/asr_billing/usr/lib/python2.7/site-packages/daemons/usluga_abon_pay.py:2246
+#: /root/translate/daemons/usluga_abon_pay.py:2298
 msgid "Пени"
 msgstr "Fines"
 
